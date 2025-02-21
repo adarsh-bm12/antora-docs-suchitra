@@ -1,0 +1,17 @@
+site:
+  title: My Antora Docs
+  start_page: my-component::index.adoc
+
+content:
+  sources:
+    - url: ./ # Or specify your repository
+
+ui:
+  bundle:
+    url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/main/raw/build/ui-bundle.zip?job=build
+    snapshot: true
+
+
+
+runtime:
+  fetch: true

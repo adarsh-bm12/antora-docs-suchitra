@@ -1,0 +1,4 @@
+= Welcome to Antora Documentation
+:page-layout: home
+
+This is a sample documentation site powered by Antora.

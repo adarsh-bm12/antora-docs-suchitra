@@ -1,0 +1,2 @@
+* xref:index.adoc[Home]
+* xref:example-component::example.adoc[Example]
