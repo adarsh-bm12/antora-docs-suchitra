@@ -1,6 +1,6 @@
 name: docs
 title: My API Document
-version: '1.13'
+version: '1.0'
 start_page: ROOT:index.adoc
 
 asciidoc:
