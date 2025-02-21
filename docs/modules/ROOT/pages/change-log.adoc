@@ -1,0 +1,805 @@
+= What’s New in Nymbl Suite ERP
+
+== R0042
+// ERP lite App version: 1.7.14.1   Release Date: 14/02/2025 Updated date:21/01/2025
+=== Device _(applicable to ERP Lite-v2.6.10.25 and Nymbl Suite ERP-v0.17.9.28)_
+* In POS Configuration tab > Entry Mode section-> Added new field "Sequence No" in Floor and Table detail.
+
+=== Dine In Location _(applicable to ERP Lite-v2.6.10.25 and Nymbl Suite ERP-v1.15.4.20)_
+* Added new fields "Max Count" and "Sales person" in the grid.
+
+
+== R0041
+// Release Date: 15/01/2025 Updated date:15/01/2025
+=== Sales Order _(applicable to Nymbl Suite ERP-v1.7.4.24)_
+* Added new field _LPO Date_ in _More Info_ section.
+
+=== Sales Invoice _(applicable to Nymbl Suite ERP-v1.13.15.46)_
+* When a Sales Order is referenced on a Sales Invoice, the _Delivery Date, LPO Number, and LPO Date_ from the Sales Order will automatically populate the _More Info_ section, provided these values were entered on the Sales Order page.
+
+// ERP lite App version: 1.7.14.1  Release Date: 15/12/2025 Updated date:15/01/2025
+=== Flexi Field _(applicable to ERP Lite-v0.1.0.3 and Nymbl Suite ERP-v0.1.0.3)_
+* Added new textarea field for _Field Query_. (Implemented only in Additional Info tab of Nymbl Suite ERP)
+// Release Date: 15/01/2025 Updated date:10/01/2025
+* Added multiple and single selection in _Field Type_ dropdown list. (Implemented only in Additional Info tab of Nymbl Suite ERP)
+
+// Release Date: 10/01/2024 Updated date:10/01/2024
+=== Price List _(applicable to Nymbl Suite ERP-v0.1.0.3)_
+* When entering an item's price, the number of allowed decimal places will vary depending on the selected currency.
+
+=== Tax Filing _(applicable to Nymbl Suite ERP-v0.2.0.4)_
+* New button "Tax Rollback" added
+
+// ERP lite App version: 1.7.14.0  Release Date: 15/12/2024 Updated date:30/12/2024
+=== Devices _(applicable to ERP Lite-v2.6.9.23 and Nymbl Suite ERP-v0.17.9.28)_
+* A new "Is Sales Person" checkbox has been added to the POS Configuration tab.
+* A "Sequence Number" field has been added to the POS Configuration and Order Channel tabs.
+
+// ERP lite App version: 1.7.14.1  Release Date: 30/12/2024 Updated date:30/12/2024
+=== Location _(applicable to ERP Lite-v1.11.4.20)_
+
+* Added the "Sequence Number" and "Is Default" fields to the POS Common > Serve Mode tab.
+* The "Is Default" setting is editable only for Entry Mode as Kiosk and POS.
+* Only one row can be set as the default at a time.
+
+=== Dine in Location _(applicable to ERP Lite-v1.5.3.12)_
+
+* A "Sequence Number" field has been added to the table details grid.
+
+
+== R0040
+// ERP lite App version: 1.7.13.99  Release Date: 28/11/2024 Updated date:29/11/2024
+//ERP API _(applicable to ERP Lite-v1.0.3.756)
+=== Schedule Company Wipe _(applicable to ERP Lite-v0.0.0.1 and Nymbl Suite ERP -v0.0.0.0)_
+
+* New page implemented to wipe freezed companies.
+
+=== Auto Upload URLs _(applicable to ERP Lite and Nymbl Suite ERP -v1.0.1.3)_
+
+* New page added under the menu to list App URL's and versions based on the location. Same page loading in Nymbl Suite ERP.
+
+=== Admin URLs _(applicable to ERP Lite and Nymbl Suite ERP -v1.0.1.2)_
+
+* New page implemented to list App URL's and version. Same page loading in Nymbl Suite ERP.
+
+=== App Configuration _(applicable to ERP Lite-v2.6.4.12)_
+* *_New feature_*
+** New field-> *Skip Y/N*
+** *Copy* icon added to copy key setting
+
+=== Device _(applicable to ERP Lite-v2.6.10.22)_
+* *_Updated_*
+** POS Config tab showing condition correction
+
+
+== R0039
+// ERP lite App version: 1.7.13.98  Release Date: 22/11/2024 Updated date:22/11/2024
+
+=== Device _(applicable to ERP Lite-v2.6.9.21)_
+* *_New feature_*
+** New checkbox added-> *Allow Login* in POS Configuration tab
+
+
+// ERP lite App version: 1.7.13.98  Release Date: 18/11/2024 Updated date:22/11/2024
+
+=== Catalog _(applicable to ERP Lite-v1.8.3.17)_
+* *_Bug fixes_*
+** Settings tab->Apply button was not working
+
+=== Catalog _(applicable to ERP Lite-v1.8.2.16)_
+* *_Bug fixes_*
+** After creating *New Group* there was a console error -fixed
+
+
+== R0038
+// ERP lite App version: 1.7.13.97  Release Date: 25/10/2024 Updated date:13/11/2024
+
+=== POS Sales Details _(applicable to ERP Lite-v1.3.2.9)_
+* *_Update_*
+** Design change (Partially completed)
+
+=== Location _(applicable to ERP Lite-v1.10.4.19)_
+* *_Bug fixes_*
+** Fixed the country/city/area sidebar issue
+
+=== ERP API _(applicable to ERP Lite-v1.0.3.739 and Nymbl Suite ERP-v1.1.8.486)_
+* *_Bug fixes_*
++
+** Item Brand error issue resolved in live.
+** New - exclude menu based on new table
+
+
+== R0037
+// ERP lite App version: 1.7.13.96  Date: 23/10/2024
+
+=== Device _(applicable to ERP Lite-v2.6.9.20)_
+* *_Update_*
+** UI and functionality change in *Order Channel* tab.
+
+=== Catalog _(applicable to ERP Lite-v1.8.2.15)_
+* *_Update_*
+** Multiple printers can be selected from the dropdown list for (KOT) printing based on the company key settings.
+
+// ERP lite App version: 1.7.13.93  Date: 23/10/2024
+
+=== Overall module error message update _(applicable to ERP Lite)_
+* *_Update_*
+** The error message update is applicable for the below mentioned pages.
++
+*Currency* -v1.0.2.7, *Location* -v1.10.3.18, *Dine in Location* -v1.4.3.11, *Devices* -v1.6.9.19, *Printer Setup* -v1.1.2.7, *Login Company* -v0.2.0.6, *Expenses* -v1.2.1.7, *Payment Type* -v0.2.0.6, *Delivery Channels* -v1.3.1.8, *Order Channels* -v1.3.0.6, *Salesman* -v0.2.3.8, *User Settings* -v0.12.17.30, *Vehicle* -v1.2.0.4, *Group & Sub Group* -v1.1.2.8, *Price list* -v2.2.1.9, *Product* -v2.3.1.10, *Modifier* -v1.3.0.7, *Catalog* -v1.7.2.14, *Customers* -v1.4.5.15, *Supplier* -v1.4.8.18, *Purchase order* -v0.6.4.15, *Purchase Receipt* -v1.4.3.13, *Purchase return* -v0.6.3.14, *Sales Order* -v0.5.2.11, *Sales Invoice[INV]* -v0.4.5.16, *Sales Return[ALL]* -v0.6.4.14, *Quick Invoice[INV]* -v0.1.0.2, *POS Sales* -v0.3.2.8, *POS Deliverect Sales* -v0.2.1.6, *Adjustments* -v0.1.3.8, *Transfer Request* -v0.2.3.10, *Transfer Out* -v0.2.4.11, *Transfer In* -v0.1.5.10, *Opening Adjustment* -v0.1.3.8, *Physical Stock Take* -v1.4.4.7, *Stock Take Adjustment* -v0.1.3.8, *General Ledger* -v1.8.7.20, *Receivables* -v1.8.7.20, *Receivable-Cash* -v1.8.7.20, *Receivable-Bank* -v1.8.7.20, *PDC Receipts* -v0.5.3.11, *Payables* -v1.8.7.20, *Payable-Cash* -v1.8.7.20, *Payable-Bank* -v1.8.7.20, *PDC Issues* -v0.5.3.11, *Matching* -v0.1.0.2, *Bank Reconciliation* -v0.7.7.19, *Bulk Confirmation* -v0.2.0.2, *Multi Receivables* -v1.5.2.8, *Multi Payables* -v1.5.2.8, *Multi General Ledger* -v1.5.2.8, *Tax* -v0.3.1.6, *Tax Period* -v0.1.0.4, *Tax Filing* -v2.1.1.8, *POS Pending Uploads* -v0.6.0.5, *Bulk Confirmation* -v0.5.1.9, *Month Close* -v0.1.0.4, *Pickup Driver Movement* -v1.2.3.9, *Chauffeur Info* -v1.2.1.7, *Shift Details* -v0.1.0.4, *App Configuration* -v1.5.3.9
+
+
+== R0036
+// ERP lite App version: 1.7.13.85  Date: 21/08/2024
+
+=== Tax filing _(applicable to ERP Lite-v2.0.1.7 and Nymbl Suite ERP-v0.1.0.3)_
+* *_Update_*
+** New button - VAT Refund - Excel download added
+
+
+=== Product _(applicable to ERP Lite-v0.7.9.22)_
+* *_Update_*
+** For empty amount fields, show value as `0.00`.
+
+** Display the *Barcode* field while adding a new product.
+
+** Hidden *Ready for sale?* checkbox from front end and set its default value as *"Y"* in the backend.
+
+** *Is Freezed ?* option will be available only in edit mode.
+
+** Option to add product image in *New* mode.
+
+** If the *Key* value of `HAS POS YN` set as `"Y"` through *_Company > Settings_* tab, then *Modify Price in POS ?* and *Modify Name in POS ?* will be shown. If the value is set as `"N"` then hide these two fields.
+
+** If the *Key* value of `Inventory Management Applicable [Y/N]` set as `"Y"` through *_Company > Settings_* tab, then
+
+*** *Inventory Type* filed will be shown.
+*** Based on the *Key* value of `Default Inventory Type [PFG/TFG]` the default value will be displayed in this field.
+*** Value set as `"PFG"` (Produced Finished Goods) for *Restaurant* and `"TFG"` (Traded Finished Goods) for *Retail*.
+
+*** *Category* field will be shown and auto display the value as *Inventory*
+*** *Stock Reorder* field will be shown
+*** If the *Key* value of `Production Mode` set as `"BOTH/AUTO"` through *_Company > Settings_* tab, then the *Enable Auto Production?* will be shown.
+
+*** If the *Key* value of `Inventory Management Applicable [Y/N]` set as `"N"` through *_Company > Settings_* tab, then
+
+**** Hidden *Category* field and set the _Default value_ as _Non-inventory_ in the backend.
+**** *Inventory Type* field will be hidden, but the value will be set as *PFG* [Restaurant - Produced Finished Goods] in the backend.
+
+**** Hidden *Stock Reorder* field and *Enable Auto Production?* field.
+
+** If the *Key* value of `Has Qty Ls YN` set as `"Y"` through *_Company > Settings_* tab, then *Loose Qty* field will be shown in view page as well as in new mode.
+
+** If the default value of the `Has Catch Weight?` key is set to `"N"` in the *_Company > Settings_* tab, the *Has Catch Weight?* and *Catch Weight UOM* fields will not be displayed in the *UOM* tab of the view page or in new mode.
+
+** If the default value of the `Has Variants YN [Y/N]` key is set to `"Y"` in the *_Company > Settings_* tab, then
+*** The *Has Variants ?* field will not be shown
+*** Also, the *Variant* fields will be hidden in the *Price List* tab of the view page and in edit mode.
+
+** If the default value of the `Has Modifiers YN [Y/N]` key is set to `"N"` in the *_Company > Settings_* tab, then
+*** The *Has Modifier ?* field will not be shown
+*** Also, the *Modifier* tab will be hidden in view page and in edit mode.
+
+** If the *Key* value of `Default UOM` set as `EAC` through *_Company > Settings_* tab, then in new mode *Each* will be displayed by default in *UOM* field.
+
+** Show the *Veg/Non-Veg* field if the *Business Type* has been selected as *Restaurant* in the *_Company > General Info_* tab.
+
+** If you select *Restaurant* as the *Business Type* in the *_Company > General Info_* tab, the *Preparation Time* and *Quantity Based Time Calculation* fields will be displayed for each unit of measurement (UOM) in the grid.
+
+** If the *Key* value of `Default Product Barcode Mode` is set to `"Y"`, the *Barcode* field entry is not mandatory. In this case, a unique barcode will be automatically generated for each Unit of Measurement (UOM) listed in the *UOM* tab (Edit mode).
++
+If the *Key* value of `Default Product Barcode Mode` is set as `"N"` then the *Barcode* field is mandatory. When editing a product, ensure you assign a barcode to each unit of measurement (UOM) listed in the *UOM* tab.
+
+** If the *Key* value of `Has Day Book Entry YN` is set to `"Y"` then the Allow on Day Book Entry ? will be shown.
+
+** For *Category* as *Non-Inventory* products, the *Stock & Sales* tab will be hidden in the view page.
+
+** If the *Key* value of the `Pricelist Tax Mode [I/E]` field is set to `"I"` through *Company > Settings* tab, the price list for the product will be automatically set as inclusive. This setting applies when adding initial products under this price list through the *Price List* page.
+
+
+=== Price List _(applicable to ERP Lite-v1.0.1.6)_
+* *_Update_*
+
+** If the default value of the `Has Variants YN [Y/N]` key is set to `"Y"` in the *_Company > Settings_* tab, then the *Variant* fields will be disabled.
++
+If the default value of the `Has Variants YN [Y/N]` key is set to `"N"` in the *_Company > Settings_* tab, then the *Variant* fields will be hidden in the grid.
+
+** Changed field name from *Vat Inclusive* to *Tax Inclusive*.
+
+** If the *Key* value of the `Pricelist Tax Mode [I/E]` field is set to `"I"` through *Company > Settings* tab, the *Tax Inclusive?* option will be automatically checked when adding an initial product.
+
+=== Customer _(applicable to ERP Lite-v1.3.5.14)_
+* *_Update_*
+** For empty amount fields, show value as `0.00`.
+
+=== Supplier _(applicable to ERP Lite-v1.3.8.17)_
+* *_Update_*
+** For empty amount fields, show value as `0.00`.
+
+
+
+== R0035
+// ERP lite App version: 1.7.13.80  Date: 31/07/2024
+=== Bank reconciliation _(applicable to ERP Lite-v0.6.7.15)_
+* *_Bug fixes_*
+** Grid horizontal scroll issue
+
+=== Product _(applicable to ERP Lite-v0.6.9.20)_
+* *_Update_*
+** *Stock and Sales* tab will get selected by default on selecting a product.
+** Veg/Non-veg toggle button design change.
+** Data loading issue while selecting different products
+** Listing only unfreezed products.
+
+=== Customer _(applicable to ERP Lite-v1.2.5.12)_
+* *_Bug fixes_*
+** *Overview* tab will get selected by default selecting a customer.
+** Listing only unfreezed customers.
+
+=== Supplier _(applicable to ERP Lite-v1.2.8.15)_
+* *_Bug fixes_*
+** *Overview* tab will get selected by default selecting a supplier.
+** Listing only unfreezed suppliers.
+
+
+== R0034
+// Date: 30/07/2024
+=== Purchase Order _(applicable to Nymbl Suite ERP-v1.10.3.24)_
+* *_Update_*
+** A new _"Description"_ column has been added to the _Item_ grid within the Purchase Order (LPO) Details section.
++
+This column's visibility is determined by the _"Show Item Description YN"_ setting in the *Transaction Setup* page against LPO. By default, the _Description_ column displays the selected item's name but can be manually edited by the user.
+
+
+== R0033
+// ERP lite App version: 1.7.13.78  Date: 26/07/2024
+=== Bank Reconciliation _(applicable to ERP Lite-v0.6.7.14)_
+* *_Update_*
+** In the grid section, the first column (checkbox) is fixed, while the remaining columns can be scrolled horizontally.
+
+=== Reports Collection _(applicable to ERP Lite-v0.0.0.0 and Nymbl Suite ERP-v 2.4.0.7)_
+* *_New feature_*
+** New button added -> *Schedule*
+** Schedule, Generate report button, or both buttons will be displayed based on the reports menu parameter (Parameter9).
+
+=== Bank Reconciliation _(applicable to ERP Lite-v0.6.7.13)_
+* *_Update_*
+** On the initial creation of bank reconciliation after company registration, then the system allows the companies registered account period date (starting Financial period).
++
+To initiate a new bank reconciliation, the starting date must be the day after the ending date of the previous reconciliation. In other words, you cannot select a date range that overlaps with a previously completed reconciliation.
+
+** On clicking the *Bank Data* button,
+*** The Bank statement Debit data will be updated in Companies Credit column.
+*** The Bank statement Credit data will be updated in Companies Debit column.
+
+** Bank Data/ERP Data
++
+*** Date Colum Reduce Width
+*** Values should be shown comma separated
+*** Debit Colum Reduce Width  Max Amount : 10,00,000.000
+*** Credit Colum Reduce Width Max Amount : 10,00,000.000
+*** *Current layout:*		Date  //  Debit  // Credit // Category  //  Cheque No  //  Remarks
+** *New layout:*		Date  // Cheque no // Debit // Credit // Category
+Remarks				      // Category
+
+** When a matched record is selected from the bank/ERP data, the corresponding rows should automatically scroll into view.
+
+** After matching, the system will scroll to the last matched position.
+
+** Sort data within each grid column.
+
+** Selected rows *Balance* amount will be shown on top of the opposite side grid. (Applicable to both side grids.)
+
+** Matching Conditions are as follows:
+*** The *Match* button will be enabled on the opposite grid only when the balance amount is zero (`"0"`).
+*** The combined total of `(credit amounts - debit amounts)` for the selected child entries must equal to the selected parent amount.
+
+* *_Bug fixes_*
+** When a user performs a head search and selects an already matched entry, the "match" checkbox in the head section should be removed. If the user then clicks "view," all checkboxes in the grid for unmatched records become disabled.
+
+=== ERP API _(applicable to ERP Lite-v1.0.3.687)_
+* *_Bug fixes_*
+** In Operations Bulk Confirmation, excluded finance entry.
+
+
+
+== R0032
+// ERP lite App version: 1.7.13.76  Date: 22/07/2024
+
+=== ERP API _(applicable to ERP Lite-v1.0.3.676)_
+* *_Update_*
+** Token expiry time changed to 16 hours
+** Api side validation for Bank reconciliation
+
+=== Employee _(applicable to ERP Lite-v0.3.0.2)_
+* *_Bug fixes_*
+** Import from Excel functionality -> Hidden "Documents" from the three dots listing
+
+=== Bank Reconciliation _(applicable to ERP Lite-v0.5.7.11)_
+* *_Bug fixes_*
+** If there is an unconfirmed entry for a bank and account combination, new entry with the same combination cannot be allowed.
+
+* *_Update_*
+** Grid entries must be arranged by date in ascending order
+** Selecting an item within a section will disable the search field.
+
+
+== R0031
+// ERP lite App version: 1.7.13.70  Date: 05/07/2024
+
+=== Email Configuration _(applicable to Nymbl Suite ERP-v 2.4.0.7)_
+* New menu added to configure email template.
+
+=== Admin Clear Data _(applicable to Nymbl Suite ERP-v 2.4.0.7)_
+* *_New feature_*
+* New options added -> Product Sync and Account Sync
+
+=== Location _(applicable to Nymbl Suite ERP-v2.27.38.78)_
+* *_Bug fixes_*
+** Enable Hybrid POS based alignment issue
+
+=== Finance _(applicable to Nymbl Suite ERP-v1.7.9.28)_
+* *_Bug fixes_*
+** Upload functionality -> enabled even if grid level record has error
+
+=== Van Sales Data Upload _(applicable to Nymbl Suite ERP-v0.0.1.9)_
+* *_Bug fixes_*
+** HTML print based issue -> related to van sales data upload module
+
+=== ERP API _(applicable to ERP Lite-v1.0.2.654 and Nymbl Suite ERP-v1.1.8.472)_
+* *_Bug fixes_*
+** Enable Hybrid POS based fix (*J*)
+
+=== Location _(applicable to ERP Lite-v1.7.2.14)_
+* *_New feature_*
+** New checkbox added - Enable Hybrid POS
+
+=== API Integration Settings _(applicable to ERP Lite-v1.7.2.14)_
+* *_Update_*
+** Minor update related to data displayed
+
+
+
+== R0030
+// ERP lite App version: 1.7.13.69  Date: 04/07/2024
+
+=== common.js _(applicable to Nymbl Suite ERP-v1.23.6.38)_
+* *_New feature_*
+** Company settings based key related to Hybrid POS enabled or not
+
+=== Location _(applicable to Nymbl Suite ERP-v2.27.37.77)_
+* *_New feature_*
+** New checkbox added -> Enable Hybrid POS
+
+=== Vehicle _(applicable to ERP Lite-v1.1.0.3)_
+* *_New feature_*
+** New fields -> Chassis No. and Salik Tag
+* *_Update_*
+** Multiple and Single selection for driver.
+** Multiple, Single or NA for helper based on company settings
+
+=== App Configuration _(applicable to ERP Lite-v1.1.0.3)_
+* *_Update_*
+** New button - Download QR
+
+=== Device _(applicable to ERP Lite-v1.3.6.14)_
+* *_Update_*
+** Changes in parent device dropdown
+
+=== Finance (receivables/payables/general ledger) _(applicable to ERP Lite-v1.7.7.19 and Nymbl Suite ERP-v1.7.8.27)_
+* *_Bug fixes_*
+** Added a api call gettxn for setting the value for _SETUP_PRVYRENTRY
+
+* *_Updates_*
+** *Annotation* and *Ref doc* fields removed.
+** *Remarks* field label changed to *Description*.
+** In *Tax applied* section *INV No.* and *INV Date* fields label changed to *DOC No.* and *DOC Dt.*
+
+=== Purchase Order _(applicable to ERP Lite-v0.5.4.14 and Nymbl Suite ERP-v1.9.3.23)_
+* *_Update_*
+** Cancel option after confirming the document
+** Modifications in cancel option
+
+=== External API Settings _(applicable to ERP Lite-v1.12.1.14)_
+* *_Update_*
+** Api log updated as table
+
+=== Account Setup _(applicable to ERP Lite-v0.0.0.1)_
+* *_New feature_*
+** New page -> Account setup  -> frontend functionality completed
+
+=== External API Settings _(applicable to ERP Lite-v1.11.1.13)_
+* *_Update_*
+** Sync log api updation - changed to one single api
+
+=== Employee _(applicable to ERP Lite-v0.2.0.1)_
+* *_New feature_*
+** upload functionality
+
+=== Supplier _(applicable to ERP Lite-v1.2.7.14)_
+* *_Update_*
+** delete icon removed from master address -From both address tab and address popup
+
+=== Customer _(applicable to ERP Lite-v1.2.4.11)_
+* *_Update_*
+** delete icon removed from master address -From both address tab and address popup
+
+
+
+== R0029
+// ERP lite App version: 1.7.13.66  Date: 13/06/2024
+
+=== Location _(applicable to ERP Lite-v1.6.2.13 and Nymbl Suite ERP-v2.26.37.76)_
+* *_New feature_*
+** Added two checkbox ->QPay and QOrder ->visible if company level settings *QPay* is enabled.
+
+=== App Configuration _(applicable to ERP Lite-v0.0.0.1 and Nymbl Suite ERP-v0.0.0.0)_
+* *_New feature_*
+** Implemented new module in ERP Lite ->for App type-based location parameters configuration (Same page is shown in Nymbl Suite ERP)
+
+=== Device _(applicable to ERP Lite-v1.3.6.14 and Nymbl Suite ERP-v0.14.9.25)_
+* *_Update_*
+** If the application type is OTS (On Table Settlement App), then the ParentId is not mandatory in new entry mode ->internally self-assigned.
+
+=== common.js _(applicable to Nymbl Suite ERP-v1.22.6.37)_
+* *_Update_*
+** Only update based on company settings key qpaylink, qpaymode
+
+=== ERP API _(applicable to ERP Lite-v1.0.2.651 and Nymbl Suite ERP-v1.1.8.468)_
+* *_Update_*
+** Update based on module wise changes
+
+
+== R0028
+=== Product _(applicable to ERP Lite-v0.5.9.19)_
+* *_Bug fixes_*
+** A space has been added to the label name 'Non Inventory' of the Category toggle field.
+
+=== User Settings _(applicable to ERP Lite-v0.12.17.29)_
+* *_Update_*
+** In device User tab role permission settings added
+
+=== User Settings _(applicable to ERP Lite-v0.8.16.25)_
+* *_Bug fixes_*
+** User settings popup design height issue
+
+=== Purchase Return _(applicable to ERP Lite-v0.5.3.13 and Nymbl Suite ERP-v1.4.3.14)_
+* *_Update_*
+** The dropdown lists all main and sub accounts. The transaction setup account will be fetched by default.
+
+
+== R0027
+=== ERP API _(applicable to ERP Lite-v1.0.0.650 and Nymbl Suite ERP-v1.1.7.464)_
+* *_Update_*
+** Company-level location admins (`LAdmin = Y`) will be exempt from OTP-based authentication.
+
+=== User Settings _(applicable to ERP Lite-v0.8.16.25)_
+* *_Bug fixes_*
+** Exclude Device Users from OTP Recipient popup screen based users list.
+
+
+== R0026
+===  Applicable to ERP Lite- _(Customer-v1.1.4.10, Supplier-v1.1.7.13, Device-v1.3.6.13, Product-v0.5.9.18, Receivables/Payables/General ledger-v1.6.1.18, Tax-v0.2.1.5, Admin Day Info-v0.1.2.6, Admin Shift Info-v0.1.2.6 and Bank-v0.1.3.7)_
+* *_Bug fixes_*
+** Fixed issue of repetitive API call
+
+=== Customer _(applicable to ERP Lite-v1.1.3.9 and Nymbl Suite ERP-v2.8.2.17)_
+* *_Update_*
+** New button added in General Info tab-> Add Address
+** Address tab UI change
+
+=== Supplier _(applicable to ERP Lite-v1.1.6.12 and Nymbl Suite ERP-v0.4.8.13)_
+* *_New feature_*
+** New button added -> Add Address
+
+=== ERP API _(applicable to ERP Lite-v1.0.0.645)_
+* *_Update_*
+** Update related to Customer and Supplier address
+
+=== Chauffeur info _(applicable to ERP Lite-v0.1.1.3)_
+* *_Bug fixes_*
+** Invoice no dropdown issue fix
+
+
+== R0025
+=== Login Page _(applicable to ERP Lite-v1.7.13.61)_
+* *_New feature_*
+** Added OTP authentication for login based on Company Settings
+*** New key added in *Settings* tab of *Company* master page. If the Key value is *MANAGER/ USER* then a *Generate OTP* button will be displayed instead of *Login*.
+
+=== User Menu Config _(applicable to ERP Lite-v0.3.7.14)_
+* *_New feature_*
+** Settings icon added to assign mail ID's to receive OTP for application login.
+
+=== Sales Analysis _(applicable to ERP Lite-v0.3.0.4 and Nymbl Suite ERP-v1.3.2.6)_
+* *_New feature_*
+** Customer class field added under customer filter section
+
+=== Sales Margin _(applicable to ERP Lite-v1.3.0.4 and Nymbl Suite ERP-v1.3.2.6)_
+* *_New feature_*
+** Customer class field added under customer filter section
+
+=== POS sales analysis _(applicable to ERP Lite-v1.3.0.4 and Nymbl Suite ERP-v0.8.1.9)_
+* *_New feature_*
+** Customer class field added under customer filter section
+
+=== Purchase Return _(applicable to ERP Lite-v0.4.3.12 and Nymbl Suite ERP-v1.3.3.13)_
+* *_Update_*
+** Main account and sub account dropdown data changes according to the setting through *Transaction* setup page.
+** Digital email implemented- Same as ERP Lite release *R0024*
+
+=== Purchase Order _(applicable to ERP Lite-v0.4.4.13 and Nymbl Suite ERP-v1.7.3.21)_
+* *_New feature_*
+** New status added for Partial Receive-> Receive and Partail Close
+* *_Update_*
+** Digital email implemented- Same as ERP Lite release *R0024*
+
+=== Purchase Receipt _(applicable to Nymbl Suite ERP-v1.3.4.14)_
+* *_Update_*
+** Digital email implemented- Same as ERP Lite release *R0024*
+
+=== PDC Issue _(applicable to ERP Lite-v0.4.3.10)_
+* *_Update_*
+** Updated condition for Bounce Date.
+
+=== PDC Receipt _(applicable to ERP Lite-v0.4.3.10)_
+* *_Update_*
+** Updated condition for Bounce Date.
+
+=== PDC Issue _(applicable to ERP Lite-v0.3.3.9 and Nymbl Suite ERP-v1.4.1.10)_
+* *_New feature_*
+** New status added for Unconfirmed cheque -> Cancel and Bounce -> reason mandatory for both statuses
+** New status added for Confirmed cheque -> Bounce -> reason mandatory
+
+=== PDC Receipt _(applicable to ERP Lite-v0.3.3.9 and Nymbl Suite ERP-v1.4.1.10)_
+* *_New feature_*
+** New status added for Unconfirmed cheque -> Cancel and Bounce -> reason mandatory for both statuses
+** New status added for Confirmed cheque -> Bounce -> reason mandatory for both statuses
+
+=== Chauffeur Info _(applicable to ERP Lite-v0.0.0.1)_
+* *_New feature_*
+** New module added to track Chauffeur movement
+
+=== Product _(applicable to ERP Lite-v0.4.7.15)_
+* *_Update_*
+** Disabled the *Category* field toggle button in edit mode.
+
+=== Customer _(applicable to ERP Lite-v 0.1.3.8)_
+* *_Bug fixes_*
+** Address tab condition for showing corrected
+
+=== Sales Invoice _(applicable to Nymbl Suite ERP-v1.12.15.45)_
+* *_Bug fixes_*
+** Live Issue - delay in loading data in edit mode
+
+* *_Update_*
+** Digital email implemented- Same as ERP Lite release *R0024*
+
+=== Sales Order _(applicable to Suite ERP -v1.5.4.22)_
+* *_Update_*
+** Digital email implemented- Same as ERP Lite release *R0024*
+
+=== Sales Return _(applicable to Suite ERP Lite -v1.6.4.24)_
+* *_Update_*
+** Digital email implemented- Same as ERP Lite release *R0024*
+
+=== Product _(applicable to Nymbl Suite ERP-v1.10.10.29)_
+* *_Update_*
+** In UOM and Modifier tab- Before switching to edit mode, the recent data should be displayed while selecting to modify the row.
+
+=== User Role settings _(applicable to Nymbl Suite ERP-v0.8.3.11)_
+* *_Update_*
+** While adding new users (based on the company selected), validate the user license.
+** While unfreezing the user in the edit form, validate the user license. This is not applicable for Default User and Device User.
+** The provision of adding roles for the POS users should be blocked.
+** Disable the Is Device User?
+** For the device users, disabled the Allow BI App Login? field.
+** In edit form, hide the user password visibility.
+** Need to validate the license count while adding new company permission to existing user.
+
+=== Chauffeur Info _(applicable to ERP Lite-v0.1.0.2)_
+* *_New feature_*
+** Added print option.
+
+=== ERP API _(applicable to Nymbl Suite ERP-v1.1.7.461)_
+* *_Update_*
+** User Role Settings page -> user license related update
+
+=== ERP API _(applicable to ERP Lite-v1.0.0.641)_
+* *_Update_*
+** While adding product group,
+*** Company/division mapping entry is created if single division only exists - division query updated to exclude freeze records.
+*** Tax mapping entry created - query updated to consider the order of entries
+
+
+== R0024
+=== Product _(applicable to ERP Lite-v0.3.7.14)_
+* *_Update_*
+** You can re-add frozen raw materials to the recipe in the raw material grid within the *Recipe* popup.
+** When unfreezing a raw material, the system checks if the same item has already been added in another row. If so, a validation message will appear to prevent duplicate entries.
+** While trying to freeze product – validate the item exists in any of the unconfirmed transactions and block freeze action.
+** While trying to freeze UOM– validate the item/uom combination exists in any of the unconfirmed transaction and block freeze action.
+
+=== User Settings _(applicable to ERP Lite-v0.8.15.24)_
+* Version change is related to OTP Authentication based CR, which is not covered in this release (details will be provided along with the CR release)
+
+=== ERP API _(applicable to ERP Lite-v1.0.0.629)_
+* *_Bug fixes_*
+** Shows user role count based on assigned users (freezed and unfreezed)
+
+=== Vehicle Master _(applicable to ERP Lite-v0.1.0.2)_
+* *_New feature_*
+** Implemented new page
+
+=== Physical Stock Take _(applicable to ERP Lite and Nymbl Suite ERP -v1.3.4.6)_
+* *_Update_*
+** If product master based report UOM does not allow loose quantity, then system stock based loose quantity will be shown under the base UOM of the product as new row (if base UOM is available).
+** *Refill* button to update the stock quantity of the items listed.
+** A toggle button *Hide zero Quantity* to hide the items with Zero _System Stock_ and _Variance._
+
+=== Email Configuration _(applicable to ERP Lite-v2.3.0.5)_
+* *_Update_*
+** UI change - Highlighted the email editor icons
+** Added Login Company, Login User and Document number in the email template.
+
+=== Digital Email (Sales Order -v0.4.2.10, Sales Invoice -v0.3.5.15, Sales Return -v0.5.4.13, Purchase Order -v0.3.3.11, Purchase Receipt -v0.3.3.11, Purchase Return -v0.3.3.11) _(applicable to ERP Lite)_
+* *_Update_*
+** UI change - Highlighted the email editor icons
+** Added Login Company, Login User and Document number in the email template.
+** Default display of CC and BCC based on Transaction setup of the specified transaction code.
+** Separate "Default template" set for direct and reference entries in Operations module.
+
+=== Login Company _(applicable to Nymbl Suite ERP-v0.6.5.17)_
+* *_Bug fixes_*
+** Live issue fix - all tabs visible instead of showing selected one only
+
+
+== R0023
+=== User Settings _(applicable to ERP Lite-v0.7.14.22)_
+* *_Update_*
+** *Role menu* popup—left side section added checkbox to select multiple menus ( earlier user has to remove one by one; now they have an option to remove multiple )
+
+=== Catalog _(applicable to ERP Lite-v1.5.1.11)_
+* *_Update_*
+** *Settings* tab -> All option, if unchecked, then all selections in the group will be cleared.
+
+=== ERP API _(applicable to ERP Lite-v1.0.0.611)_
+* *_Update_*
+** User Settings -> Regarding multiple menu selection checkbox
+
+=== Sales Analysis _(applicable to ERP Lite-v0.2.0.3)_
+* *_Update_*
+** UI change -> All FOC field -> Alignment issue fixed and checkbox size corrected.
+
+=== Sales Margin _(applicable to ERP Lite-v1.2.0.3)_
+* *_Update_*
+** UI change -> All FOC field -> Alignment issue fixed and checkbox size corrected.
+
+=== POS Sales Analysis _(applicable to ERP Lite-v1.2.0.3)_
+* *_Update_*
+** UI change -> All FOC field -> Alignment issue fixed and checkbox size corrected.
+
+== R0022
+=== User Settings _(applicable to ERP Lite-v0.6.14.21)_
+* *_Update_*
+** In *Edit* mode, users can navigate directly to any tab for editing.
+** New button -> *Submit* -> added in edit mode
+
+=== Catalog _(applicable to ERP Lite-v1.4.1.10 and Nymbl Suite ERP-v0.11.3.24)_
+* *_New feature_*
+** Added new checkbox -> *All* -> under *Settings* section to select all Groups.
+
+=== Product _(applicable to Nymbl Suite ERP-v1.10.9.28)_
+* *_Update_*
+** You can re-add frozen raw materials to the recipe in the raw material grid within the *Recipe* popup.
+
+** When unfreezing a raw material, the system checks if the same item has already been added in another row. If so, a validation message will appear to prevent duplicate entries.
+
+** While trying to freeze product – validate the item exists in any of the unconfirmed transactions and block freeze action.
+
+** While trying to freeze UOM– validate the item/uom combination exists in any of the unconfirmed transaction and block freeze action.
+
+=== Sales Return _(applicable to Nymbl Suite ERP-v1.5.4.23)_
+* *_Update_*
+** Detail grid section sorting order fixed (removed sorting in frontend and updated in API side)
+
+=== Sales Invoice _(applicable to Nymbl Suite ERP-v1.5.4.23)_
+* *_Update_*
+** Detail grid section sorting order fixed (removed sorting in frontend and updated in API side)
+
+=== Purchase Receipt _(applicable to Nymbl Suite ERP-v1.2.4.13)_
+* *_Update_*
+** Detail grid section sorting order fixed (removed sorting in frontend and updated in API side)
+
+=== Purchase Return _(applicable to Nymbl Suite ERP-v1.2.3.11)_
+* *_Update_*
+** Detail grid section sorting order fixed (removed sorting in frontend and updated in API side)
+
+=== Transfer In _(applicable to Nymbl Suite ERP-v1.2.3.11)_
+* *_Update_*
+** Detail grid section sorting order fixed (removed sorting in frontend and updated in API side)
+
+=== Transfer Out _(applicable to Nymbl Suite ERP-v1.2.2.9)_
+* *_Update_*
+** Detail grid section sorting order fixed (removed sorting in frontend and updated in API side)
+
+=== Finance (General Ledger/ Receivable Entry / Payable Entry) _(applicable to Nymbl Suite ERP-v1.6.6.24)_
+* *_Bug fixes_*
+** Dropdown default selection, if only 1 item (grid section).
+** Unwanted selection removed - Details section grid-based account field enabled in edit mode.
+
+=== ERP API _(applicable to Nymbl Suite ERP-v1.1.7.449)_
+* *_Update_*
+** Detail grid section sorting order fixed
+
+=== ERP API _(applicable to ERP Lite-v1.0.0.605)_
+* *_Update_*
+** Operations based bulk confirmation-Transaction type and Transaction code - shows only items — applicable for the specified company
+
+=== API Integration Settings _(applicable to ERP Lite -v1.4.2.8)_
+* *_Bug fixes_*
+** Name field -> "Space" was not taking and max limit -> issue fixed
+
+
+== R0021
+=== User Settings _(applicable to ERP Lite-v0.6.13.19)_
+* *_Update_*
+** In Role listing section
+*** Show count against each role that indicates how many users are assigned with the specified role
+*** Role entries with count as '0' there will be an option to delete the role.
+
+=== API Integration Settings _(applicable to ERP Lite-v1.4.2.7)_
+* *_New feature_*
+** New field added -> Slab
+** New tab added to capture API actions -> API Action Log
+** Added access permission setting for Attachment API and Finance API.
+
+* *_Update_*
+** UI change -> Changed positions of fields -> Document Status, Division and Department
+
+=== ERP API _(applicable to ERP Lite-v1.0.0.591)_
+* *_Update_*
+** Physical Stock Take - In Excel upload "0" value checking validations removed.
+** Physical Stock Take - Status update on cancellation now runs in a single query.
+
+
+== R0020
+=== Finance (General Ledger/ Receivable Entry / Payable Entry) _(applicable to Nymbl Suite ERP-v1.5.4.21)_
+* *_Updates_*
+** For the unposted documents:
+.. There should be an option to change the Main account and Sub account.
+.. The system should validate the main account, sub account and currency combination while updating the accounts in case of normal and control accounts.
+.. While updating/deleting the document, check whether matching is done for the data. If matching is done, then should not allow to update/delete the document
+
+* *_Bug fixes_*
+** When the posted document is copied, the new document should act as an unposted document where the item details should be editable.
+
+
+== R0019
+=== Catalog _(applicable to ERP Lite-v1.4.1.10 and Nymbl Suite ERP-v0.11.3.24)_
+* *_New feature_*
+** *Settings* section added in General Info tab for setting KDS device and KOT printer.
+
+=== Pickup driver movement _(applicable to ERP Lite-v0.1.3.5 and Nymbl Suite ERP-v0.1.3.5)_
+* *_Update_*
+** While entering the end time system popup should show the default values as (start time + 5 minutes)
+* *_New feature_*
+** Added print option
+
+=== Sales Analysis, Sales Margin and POS Sales Analysis _(applicable to ERP Lite-v0.1.0.2)_
+* *_New feature_*
+** Added new fields -> All FOC and Product Brand
+
+=== ERP API _(applicable to ERP Lite-v1.0.0.591)_
+* *_Update_*
+** In Excel upload "0" value checking validations removed.
+** Status update on cancellation now runs in a single query.
+
+=== Sales Analysis and Sales Margin _(applicable to Nymbl Suite ERP-v1.2.2.5)_
+* *_New feature_*
+** Added new fields -> All FOC and Product Brand
+
+=== POS Sales Analysis _(applicable to Nymbl Suite ERP-v0.7.1.8)_
+* *_New feature_*
+** Added new fields -> All FOC and Product Brand
+

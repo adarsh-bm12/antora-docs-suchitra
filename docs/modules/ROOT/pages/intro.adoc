@@ -1,0 +1,24 @@
+= Introduction
+
+
+== Overview
+
+This documentation provides details on the API endpoints and functionality offered by the School teacher creation and get all teacher details.
+
+== Authentication
+
+To access the School teacher and student details, you need to authenticate your requests using API key-based authentication.
+
+=== API Key Authentication
+
+Include your API key in the headers of your HTTP requests as follows:
+
+* *SecretKey*    {blank}   `string`
++
+API Secret Key
+
+* *ClientId*    {blank}   `string`
++
+Client Id For API
+
+Replace `SecretKey` with your actual API Secret key.

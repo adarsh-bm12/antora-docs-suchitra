@@ -1,0 +1,130 @@
+[tabs]
+====
+Body::
+
++
+[source,json]
+----
+{
+  "IsSuccess": true,
+  "Data": "string",
+  "Errors": "string"
+}
+----
+
+Response Success::
+
++
+[source,json]
+----
+{
+    "IsSuccess": true,
+    "Data": [
+        {
+            "id": 200,
+            "firstName": "Kumar",
+            "lastName": "Babu",
+            "age": 35,
+            "email": "baule@xyz.com",
+            "class": 8,
+            "students": [
+                {
+                    "studentid": 5,
+                    "firstName": "mari",
+                    "lastName": "alex",
+                    "age": 21,
+                    "gender": "male"
+                }
+            ]
+        }
+    ],
+    "Errors": null
+}
+----
+
+Response Failure::
+In case of errors, the API will respond with an appropriate HTTP status code and a JSON error message.
++
+[source,json]
+----
+{
+  "IsSuccess": false,
+  "Data": null,
+  "Errors": [
+    {
+      "Code": "INV0001",
+      "Message": "Invalid Student ID"
+     }
+  ]
+}
+----
+
+Field Description::
++
+* *IsSuccess*    {blank}   `string`
++
+True/False
++
+If the value is *True* then the *Data* section will receive data from the external system. Error section will be `NULL`.
++
+If the value is *False*, then the *Data* section will be null. The *Error* section will be the list of validation based on which the teacher creation was failed.
+
+* *Data*
+
+** *ID*    {blank}   `int`
++
+Teacher ID
+
+** *firstName*    {blank}   `string`
++
+Teacher's first name
+
+** *lastName*    {blank}   `string`
++
+Teacher's last name
+
+** *age*    {blank}   `string`
++
+Age of the teacher
+
+** *email*    {blank}   `string`
++
+Email address of the teacher
+
+** *class*    {blank}   `string`
++
+Class of the teacher
+
+** *students:* Students information
+
+*** *studentid*    {blank}   `int`
++
+Students unique ID
+
+*** *firstName*    {blank}   `string`
++
+First name of the student
+
+*** *lastName*    {blank}   `string`
++
+Last name of the student
+
+*** *age*    {blank}   `int`
++
+Age of the student
+
+*** *gender*    {blank}   `string`
++
+Gender of the student
+
+
+* *Error*
+
+** *Code*    {blank}   `string`
++
+Displays the error code
+
+** *Message*    {blank}   `string`
++
+Displays the error message
+====

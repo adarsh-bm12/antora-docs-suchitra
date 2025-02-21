@@ -1,17 +1,23 @@
 site:
-  title: My Antora Docs
-  start_page: my-component::index.adoc
+  title: My API Document
+  start_page: docs::index.adoc
 
 content:
   sources:
-    - url: ./ # Or specify your repository
+    - url: .
+      branches: main
+      start_path: docs  # Adjust this based on your folder structure
 
 ui:
   bundle:
-    url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/main/raw/build/ui-bundle.zip?job=build
+    url: ./ui-bundle.zip
     snapshot: true
-
-
 
 runtime:
   fetch: true
+
+
+output:
+  dir: ./public
+
+

@@ -1,0 +1,19 @@
+[tabs]
+======
+Header Parameter::
++
+* *TeacherId*    {blank}   `string`
++
+Teacher Id For API based on API settings
++
+
+Request:: *URL:* `/Teachers/ID`
++
+include::request-all-teacher.adoc[]
+
+
+Response::
++
+include::response-all-teacher.adoc[]
+
+======
