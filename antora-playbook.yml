@@ -4,9 +4,9 @@ site:
 
 content:
   sources:
-    - url: .
-      branches: main
-      start_path: docs  # Adjust this based on your folder structure
+    - url: https://github.com/SuchithraBN/antora-docs.git
+      branches: main   # Adjust branch name if needed
+      start_path: docs  # Change if your AsciiDoc files are in a different folderAdjust this based on your folder structure
 
 ui:
   bundle:
