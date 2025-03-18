@@ -1,0 +1,98 @@
+[tabs]
+====
+Body::
+
++
+[source,json]
+----
+{
+  "id": 0,
+  "firstName": "string",
+  "lastName": "string",
+  "age": 0,
+  "email": "string",
+  "class": 0,
+  "students": [
+    {
+      "studentid": 0,
+      "firstName": "string",
+      "lastName": "string",
+      "age": 0,
+      "gender": "string"
+    }
+  ]
+}
+----
+
+Sample Value::
++
+[source,json]
+----
+{
+  "id": 204,
+  "firstName": "Kumar",
+  "lastName": "Babu",
+  "age": 35,
+  "email": "baule@xyz.com",
+  "class": 8,
+  "students": [
+    {
+      "studentid": 5,
+      "firstName": "mari",
+      "lastName": "alex",
+      "age": 21,
+      "gender": "male"
+    }
+  ]
+}
+----
+
+Field Description::
++
+** *ID*    {blank}   `int`
++
+Teacher ID
+
+** *firstName*    {blank}   `string`
++
+Teacher's first name
+
+** *lastName*    {blank}   `string`
++
+Teacher's last name
+
+** *age*    {blank}   `string`
++
+Age of the teacher
+
+** *email*    {blank}   `string`
++
+Email address of the teacher
+
+** *class*    {blank}   `string`
++
+Class of the teacher
+
+** *students:* Students information
+
+*** *studentid*    {blank}   `int`
++
+Students unique ID
+
+*** *firstName*    {blank}   `string`
++
+First name of the student
+
+*** *lastName*    {blank}   `string`
++
+Last name of the student
+
+*** *age*    {blank}   `int`
++
+Age of the student
+
+*** *gender*    {blank}   `string`
++
+Gender of the student
+
+====

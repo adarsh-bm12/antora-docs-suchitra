@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Finance :: My Antora Docs</title>
+    <meta name="generator" content="Antora 3.1.10">
+
+<link rel="stylesheet" title="Default" href="../../../../_/css/site.css">
+
+
+
+
+<script>var uiRootPath = '../../../../_'</script>
+<script src="../../../../_/js/vendor/medium-zoom.js"></script>
+<script type="text/javascript" id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="e4db29b5-cd94-4bcf-87e4-04f4ca564240" data-blockingmode="manual"></script>
+<!-- Matomo -->
+<script>
+  var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="https://lisk.matomo.cloud/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '2']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.async=true; g.src='//cdn.matomo.cloud/lisk.matomo.cloud/matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Matomo Code -->
+<!-- Matomo Tag Manager -->
+<script>
+  var _mtm = window._mtm = window._mtm || [];
+  _mtm.push({'mtm.startTime': (new Date().getTime()), 'event': 'mtm.Start'});
+  var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+  g.async=true; g.src='https://cdn.matomo.cloud/lisk.matomo.cloud/container_RUW6y8yf.js'; s.parentNode.insertBefore(g,s);
+</script>
+<!-- End Matomo Tag Manager -->
+<link rel="icon" href="../../../../_/img/suite-icon.png" type="image/x-icon">
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="#">My Antora Docs</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">APIs</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="../../../../home/current/index.html">Nymbl Suite API</a>
+            <a class="navbar-item" href="../../../../shopify-api/current/index.html">Shopify Integration API</a>
+          </div>
+        </div>
+
+
+        <!-- <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="#">Download</a>
+          </span>
+        </div> -->
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="toolbar" role="navigation">
+  <button class="nav-toggle"></button>
+  <div class="components-versions">
+      <div class="context">
+    <span class="title">API Document</span>
+    <span class="version">1.13</span>
+    <span class="version"></span>
+    <span class="version"></span>
+  </div>
+    <span></span>
+      </div>
+  <span></span>
+  <span></span>
+  <nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../../index.html">API Document</a></li>
+    <li><a href="finance.html">Finance</a></li>
+  </ul>
+</nav>
+</div>
+
+<div class="body">
+<div class="nav-container" data-component="docs" data-version="1.13">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../../index.html">API Document</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../intro.html">Introduction</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../all-teacher/teacher-all-create.html"><code>GET</code> Get All Teacher Information</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../create-teacher/teacher-create.html"><code>POST</code> Teacher create</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">API Document</span>
+    <span class="version">1.13</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="../../index.html">API Document</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../../index.html">1.13</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+      <h1 class="page">Finance</h1>
+    <div class="sect1">
+<h2 id="_r0031"><a class="anchor" href="#_r0031"></a>R0031</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_finance_applicable_to_nymbl_suite_erp_v1_7_9_28"><a class="anchor" href="#_finance_applicable_to_nymbl_suite_erp_v1_7_9_28"></a>Finance <em>(applicable to Nymbl Suite ERP-v1.7.9.28)</em></h3>
+<div class="ulist">
+<ul>
+<li>
+<p><strong><em>Bug fixes</em></strong></p>
+<div class="ulist">
+<ul>
+<li>
+<p>Upload functionality &#8594; enabled even if grid level record has error</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_r0030"><a class="anchor" href="#_r0030"></a>R0030</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_finance_receivablespayablesgeneral_ledger_applicable_to_erp_lite_v1_7_7_19_and_nymbl_suite_erp_v1_7_8_27"><a class="anchor" href="#_finance_receivablespayablesgeneral_ledger_applicable_to_erp_lite_v1_7_7_19_and_nymbl_suite_erp_v1_7_8_27"></a>Finance (receivables/payables/general ledger) <em>(applicable to ERP Lite-v1.7.7.19 and Nymbl Suite ERP-v1.7.8.27)</em></h3>
+<div class="ulist">
+<ul>
+<li>
+<p><strong><em>Bug fixes</em></strong></p>
+<div class="ulist">
+<ul>
+<li>
+<p>In account year get API &#8594;added AccountsTran/GetTxn api call to get the value for _SETUP_PRVYRENTRY</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><strong><em>Updates</em></strong></p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Annotation</strong> and <strong>Ref doc</strong> fields removed.</p>
+</li>
+<li>
+<p><strong>Remarks</strong> field label changed to <strong>Description</strong>.</p>
+</li>
+<li>
+<p>In <strong>Tax applied</strong> section <strong>INV No.</strong> and <strong>INV Date</strong> fields label changed to <strong>DOC No.</strong> and <strong>DOC Dt.</strong></p>
+<div class="paragraph">
+<p><span class="image unresolved"><img src="finance-04-07-2024.png" alt="finance 04 07 2024" width="500"></span></p>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_r0026"><a class="anchor" href="#_r0026"></a>R0026</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_receivablespayablesgeneral_ledger_applicable_to_erp_lite_v1_6_1_18"><a class="anchor" href="#_receivablespayablesgeneral_ledger_applicable_to_erp_lite_v1_6_1_18"></a>Receivables/Payables/General ledger <em>(applicable to ERP Lite-v1.6.1.18)</em></h3>
+<div class="ulist">
+<ul>
+<li>
+<p><strong><em>Bug fixes</em></strong></p>
+<div class="ulist">
+<ul>
+<li>
+<p>There were some unwanted API calls that were fixed</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_r0022"><a class="anchor" href="#_r0022"></a>R0022</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_finance_general_ledger_receivable_entry_payable_entry_applicable_to_nymbl_suite_erp_v1_6_6_24"><a class="anchor" href="#_finance_general_ledger_receivable_entry_payable_entry_applicable_to_nymbl_suite_erp_v1_6_6_24"></a>Finance (General Ledger/ Receivable Entry / Payable Entry) <em>(applicable to Nymbl Suite ERP-v1.6.6.24)</em></h3>
+<div class="ulist">
+<ul>
+<li>
+<p><strong><em>Bug fixes</em></strong></p>
+<div class="ulist">
+<ul>
+<li>
+<p>Dropdown default selection, if only 1 item (grid section).</p>
+</li>
+<li>
+<p>Unwanted selection removed - Details section grid-based account field enabled in edit mode.</p>
+<div class="paragraph">
+<p><span class="image unresolved"><img src="gl-suite-erp-18-03-2024.png" alt="gl suite erp 18 03 2024" width="500"></span>
+<span class="image unresolved"><img src="recev-suite-erp-18-03-2024.png" alt="recev suite erp 18 03 2024" width="500"></span>
+<span class="image unresolved"><img src="payables-suite-erp-18-03-2024.png" alt="payables suite erp 18 03 2024" width="500"></span></p>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_r0020"><a class="anchor" href="#_r0020"></a>R0020</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_finance_general_ledger_receivable_entry_payable_entry_applicable_to_nymbl_suite_erp_v1_5_4_21"><a class="anchor" href="#_finance_general_ledger_receivable_entry_payable_entry_applicable_to_nymbl_suite_erp_v1_5_4_21"></a><em>Finance (General Ledger/ Receivable Entry / Payable Entry) (applicable to Nymbl Suite ERP-v1.5.4.21)</em></h3>
+<div class="ulist">
+<ul>
+<li>
+<p><strong><em>Updates</em></strong></p>
+<div class="ulist">
+<ul>
+<li>
+<p>For the unposted documents:</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>There should be an option to change the Main account and Sub account.</p>
+</li>
+<li>
+<p>The system should validate the main account, sub account and currency combination while updating the accounts in case of normal and control accounts.</p>
+</li>
+<li>
+<p>While updating/deleting the document, check whether matching is done for the data. If matching is done, then should not allow to update/delete the document</p>
+</li>
+</ol>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><strong><em>Bug fixes</em></strong></p>
+<div class="ulist">
+<ul>
+<li>
+<p>When the posted document is copied, the new document should act as an unposted document where the item details should be editable.</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_r009"><a class="anchor" href="#_r009"></a>R009</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_gl_applicable_to_nymbl_suite_erp_v1_2_3_17"><a class="anchor" href="#_gl_applicable_to_nymbl_suite_erp_v1_2_3_17"></a><em>GL (applicable to Nymbl Suite ERP-v1.2.3.17)</em></h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Based on the transaction, period will get listed. The <strong>Current month and year</strong> will be auto selected.</p>
+<div class="paragraph">
+<p><span class="image unresolved"><img src="gl-jan30-2024.png" alt="gl jan30 2024" width="500"></span></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>The current month is set through <strong>Company</strong> master.</p>
+<div class="paragraph">
+<p><span class="image unresolved"><img src="company-jan30-2024.png" alt="company jan30 2024" width="500"></span></p>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_gl_applicable_to_erp_lite_v1_2_3_17"><a class="anchor" href="#_gl_applicable_to_erp_lite_v1_2_3_17"></a><em>GL (applicable to ERP Lite-v1.2.3.17)</em></h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Based on the transaction, period will get listed. The <strong>Current month and year</strong> will be auto selected.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>The current month is set through <strong>Company</strong> master.</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_payables_applicable_to_erp_lite_v1_2_3_17"><a class="anchor" href="#_payables_applicable_to_erp_lite_v1_2_3_17"></a><em>Payables (applicable to ERP Lite-v1.2.3.17)</em></h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Based on the transaction, period will get listed. The <strong>Current month and year</strong> will be auto selected.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>The current month is set through <strong>Company</strong> master.</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_receivables_applicable_to_erp_lite_v1_6_6_17"><a class="anchor" href="#_receivables_applicable_to_erp_lite_v1_6_6_17"></a><em>Receivables (applicable to ERP Lite-v1.6.6.17)</em></h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Based on the transaction, period will get listed. The <strong>Current month and year</strong> will be auto selected.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>The current month is set through <strong>Company</strong> master.</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_multi_receivables_applicable_to_erp_lite_v1_3_1_5"><a class="anchor" href="#_multi_receivables_applicable_to_erp_lite_v1_3_1_5"></a><em>Multi Receivables (applicable to ERP Lite-v1.3.1.5)</em></h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Based on the transaction, period will get listed. The <strong>Current month and year</strong> will be auto selected.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>The current month is set through <strong>Company</strong> master.</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_multi_payables_applicable_to_erp_lite_v1_3_1_5"><a class="anchor" href="#_multi_payables_applicable_to_erp_lite_v1_3_1_5"></a><em>Multi Payables  (applicable to ERP Lite-v1.3.1.5)</em></h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Based on the transaction, period will get listed. The <strong>Current month and year</strong> will be auto selected.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>The current month is set through <strong>Company</strong> master.</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_erp_api_applicable_to_erp_lite_v1_1_7_415"><a class="anchor" href="#_erp_api_applicable_to_erp_lite_v1_1_7_415"></a><em>ERP API (applicable to ERP Lite-v1.1.7.415)</em></h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Changes related to getting company&#8217;s current month value</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_r007"><a class="anchor" href="#_r007"></a>R007</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_erp_api_applicable_to_nymbl_suite_erp_v1_1_7_407"><a class="anchor" href="#_erp_api_applicable_to_nymbl_suite_erp_v1_1_7_407"></a><em>ERP API (applicable to Nymbl Suite ERP-v1.1.7.407)</em></h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Added grace days to show the year over the module.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>The grace days setting has to be done in <strong>Transaction Setup</strong> page.</p>
+<div class="paragraph">
+<p><span class="image unresolved"><img src="txn-setup-jan23-2024.jpg" alt="txn setup jan23 2024" width="500"></span></p>
+</div>
+</li>
+<li>
+<p>Based on the above setting the <strong>Period</strong> selection value will get updated in <strong>General Ledger, Payables and Receivables</strong> page.</p>
+<div class="paragraph">
+<p><span class="image unresolved"><img src="gl-jan23-2024.jpg" alt="gl jan23 2024" width="500"></span></p>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+  </article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <div class="footerdiv">
+    <p>© 2023 Checkout Computer Systems Trading LLC.
+    </p>
+    <!-- <div class="community-section">
+      <p class="community-section__text">Follow Lisk on: </p>
+      <div class="community-section__icons"> -->
+    <div class="community_icons">
+      <a href="https://www.youtube.com/@be-nymbl" title="YouTube" target="_blank" class="footer_icon icon-youtube"></a>
+      <a href="https://twitter.com/checkoutpoint/" title="Twitter" target="_blank" class="footer_icon icon-twitter"></a>
+      <a href="https://www.instagram.com/checkout_pointfzco/" title="Instagram" target="_blank" class="footer_icon icon-instagram"></a>
+      <a href="https://www.facebook.com/benymbl.co" title="Facebook" target="_blank" class="footer_icon icon-facebook"></a>
+      <a href="https://www.linkedin.com/company/be-nymbl/" title="Linkedin" target="_blank" class="footer_icon icon-linkedin"></a>
+
+      <!--    </div> -->
+    </div>
+  </div>
+</footer>
+<script id="site-script" src="../../../../_/js/site.js" data-ui-root-path="../../../../_"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script async src="../../../../_/js/vendor/highlight.js"></script>
+<script async src="../../../../_/js/vendor/glossary.js"></script>
+<script async src="../../../../_/js/vendor/tabs.js"></script>
+<script async src="../../../../_/js/vendor/swagger-ui.js"></script>
+<script async src="../../../../_/js/vendor/component-versions.js"></script>
+<script src="../../../../_/js/vendor/custom.js"></script>
+
+
+
+  </body>
+</html>

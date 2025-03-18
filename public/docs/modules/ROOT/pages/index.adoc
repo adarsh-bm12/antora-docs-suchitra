@@ -1,0 +1,34 @@
+
+:page-layout: api-home
+
+++++
+<style>
+.doc {
+  max-width: 100% !important;
+  height:100vh;
+}
+
+</style>
+++++
+
+
+++++
+<div class="nav-card-container">
+++++
+
+[.nav-card]
+--
+.Teacher/Create
+* xref:create-teacher/teacher-create.adoc[]
+--
+
+[.nav-card]
+--
+.Teacher/Get Teacher
+* xref:all-teacher/teacher-all-create.adoc[]
+--
+
+
+++++
+</div>
+++++

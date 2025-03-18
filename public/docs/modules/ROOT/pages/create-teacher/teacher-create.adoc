@@ -1,0 +1,33 @@
+= `POST` Teacher create
+
+== Overview
+
+This API is to create teacher with allocated student details.
+
+== API details
+
+include::teacher-create-copy.adoc[]
+
+
+== Error Codes and Messages
+Use your error code or message to troubleshoot problems with the API.
+
+
+[cols="1", grid=rows, frame=none]
+|====
+
+|*Error Code:* `INV0001`
+
+*Message:* Invalid Student ID
+
+*Problem:* Student ID does not exist
+
+
+|*Error Code:* `INV0002`
+
+*Message:* Invalid Teacher ID
+
+*Problem:* Teacher ID does not exist
+
+
+|====

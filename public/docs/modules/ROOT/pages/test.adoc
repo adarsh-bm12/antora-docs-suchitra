@@ -1,0 +1,987 @@
+= `GET` Invoice document status
+
+== Overview
+
+This API is to get invoice document status.
+
+== API details
+
+
+[tabs]
+======
+Header Parameter::
++
+* *SecretKey*    {blank}   `string`
++
+API Secret Key
+
+* *ClientId*    {blank}   `string`
++
+Client Id For API
+
+
+Query Parameter::
++
+* *DocId*    {blank}   `string`
++
+Unique Id Of Document
+
+* *txnCode*    {blank}   `string`
++
+Transaction code
+
+
+Request::
+*URL:*
++
+[source,http]
+----
+URL: /Invoice/DocumentStatus
+----
++
+[tabs]
+====
+
+Body::
++
+[source,json]
+----
+{
+  "redirecturl": "string",
+  "Data": {
+    "UniqueId": "string",
+    "TransactionType": "string",
+    "TransactionCode": "string",
+    "LocationCode": "string",
+    "ReferenceId": "string",
+    "CurrencyCode": "string",
+    "Note": "string",
+    "Number": "string",
+    "Date": "string",
+    "ItemTotal": 0,
+    "Discount": 0,
+    "DiscountPercentage": 0,
+    "TaxesIncluded": "string",
+    "SubTotal": 0,
+    "TAX": [
+      {
+        "UniqueId": "string",
+        "TaxCode": "string",
+        "Percentage": 0,
+        "Value": 0
+      }
+    ],
+
+    "TotalTax": 0,
+    "TotalAmount": 0,
+    "Items": [
+      {
+        "UniqueId": "string",
+        "ProductTitle": "string",
+        "SKU": "string",
+        "Quantity": 0,
+        "Price": 0,
+        "SubTotal": 0,
+        "TotalTax": 0,
+        "TaxesIncluded": "string",
+        "TAX": [
+          {
+            "UniqueId": "string",
+            "TaxCode": "string",
+            "Percentage": 0,
+            "Value": 0
+          }
+        ],
+        "Discount": 0,
+        "DiscountPercentage": 0,
+        "TotalAmount": 0
+      }
+    ],
+    "Customer": {
+      "UniqueId": "string",
+      "Name": "string",
+      "Phone": "string",
+      "Email": "string",
+      "Address": {
+        "Address1": "string",
+        "Address2": "string",
+        "City": "string",
+        "Country": "string",
+        "Area": "string"
+      },
+      "UseSameDeliveryAddress": "string",
+      "DeliveryAddress": {
+        "Address1": "string",
+        "Address2": "string",
+        "City": "string",
+        "Country": "string",
+        "Area": "string"
+      }
+    },
+    "Salesman": {
+      "UniqueId": "string",
+      "Name": "string"
+    },
+    "Payment": [
+      {
+        "UniqueId": "string",
+        "Type": "string",
+        "Amount": 0,
+        "Tender": 0,
+        "Change": 0,
+        "Reference": "string"
+      }
+    ]
+  }
+}
+----
+
+Sample Value::
++
+[source,json]
+----
+{
+  "redirecturl": "",
+  "Data": {
+    "UniqueId": "123458",
+    "TransactionType": "Invoice",
+    "TransactionCode": "INV",
+    "LocationCode": "S01",
+    "ReferenceId": "",
+    "CurrencyCode": "AED",
+    "Note": "",
+    "Number": "325",
+    "Date": "24-11-2023",
+    "ItemTotal": 525.0,
+    "Discount": 0.0,
+    "DiscountPercentage": 0.0,
+    "TaxesIncluded": "N",
+    "TAX": [],
+    "SubTotal": 500.0,
+    "TotalTax": 25.0,
+    "TotalAmount": 525.0,
+    "Items": [
+        {
+            "UniqueId": "1586",
+            "ProductTitle": "Basumati rice",
+            "SKU": "I0000178QA7",
+            "Quantity": 10,
+            "Price": 50,
+            "SubTotal": 500,
+            "TotalTax": 25,
+            "TaxesIncluded": "N",
+            "TAX": [
+                {
+                    "UniqueId": "1256",
+                    "TaxCode": "VAT05",
+                    "Percentage": 5,
+                    "Value": 25
+                }
+            ],
+            "Discount": 0,
+            "DiscountPercentage": 0,
+            "TotalAmount": 525
+        }
+    ],
+    "Customer": {
+        "UniqueId": "125",
+        "Name": "Nymbl Customer",
+        "Phone": "155232626",
+        "Email": "ny45464@hjjk.com",
+        "Address": {
+            "Address1": "nothing",
+            "Address2": "",
+            "City": "Abu Dhabi",
+            "Country": "UAE",
+            "Area": "Al Aman"
+        },
+        "UseSameDeliveryAddress": "Y",
+        "DeliveryAddress": {
+            "Address1": "",
+            "Address2": "",
+            "City": "",
+            "Country": "",
+            "Area": ""
+        }
+    },
+    "Salesman": {
+        "UniqueId": "",
+        "Name": "Default Salesman"
+    },
+    "Payment": [
+        {
+            "UniqueId": "",
+            "Type": "CASH",
+            "Amount": 525,
+            "Tender": 0,
+            "Change": 0,
+            "Reference": ""
+        }
+    ]
+}
+}
+----
+
+Field Description::
++
+* *redirecturl*    {blank}   `string`
++
+Call back URL
+
+* *UniqueId*    {blank}   `string`
++
+Invoice Unique Id
+
+* *TransactionType*    {blank}   `string`
++
+Transaction type: Invoice or Return
+
+* *TransactionCode*    {blank}   `string`
++
+transaction Code
+
+* *LocationCode*    {blank}   `string`
++
+Location code defined through this page will be auto fetched else we have to manually provide in code.
+
+* *ReferenceId*    {blank}   `string`
++
+Unique Id For Reference
+
+* *CurrencyCode*    {blank}   `string`
++
+Invoice currency Code
+
+* *Note*    {blank}   `string`
++
+Invoice Note
+
+* *Number*    {blank}   `string`
++
+Invoice Number
+
+* *Date*    {blank}   `string`
++
+Invoice date format should be dd-mm-yyyy (28-12-2023)
+
+* *ItemTotal*    {blank}   `decimal`
++
+Product total amount
+
+* *Discount*    {blank}   `decimal`
++
+Header discount
+
+* *DiscountPercentage*    {blank}   `decimal`
++
+Header discount percentage (If we provide discount percentage, also provide calculated value in discount)
+
+* *TaxesIncluded*    {blank}   `string`
++
+If Tax Included set `"Y"` for Yes and `"N"` for No
+
+* *SubTotal*    {blank}   `decimal`
++
+Sub total Amount
+
+* *Tax*: Invoice tax details
+
+** *UniqueId*    {blank}   `string`
++
+TAX Unique Id
+
+** *TaxCode*    {blank}   `string`
++
+TAX Code
+
+** *Percentage*    {blank}   `decimal`
++
+TAX Percentage
+
+** *Value*    {blank}   `decimal`
++
+TAX Value
+
+* *TotalTax*    {blank}   `decimal`
++
+Total tax amount for the invoice
+
+* *TotalAmount*    {blank}   `decimal`
++
+Total Amount of the invoice
+
+* *Items*: Item details
+
+** *UniqueId*    {blank}   `string`
++
+Product Unique Id
+
+** *ProductTitle*    {blank}   `string`
++
+Product Title
+
+** *SKU*    {blank}   `string`
++
+Product barcode
+
+** *Quantity*    {blank}   `decimal`
++
+Product Quantity
+
+** *Price*    {blank}   `decimal`
++
+Product Unit Price
+
+** *SubTotal*    {blank}   `decimal`
++
+Product sub total (Quantity*Price)
+
+** *TotalTax*    {blank}   `decimal`
++
+Product Total Tax Amount
+
+** *TaxesIncluded*    {blank}   `string`
++
+Tax is included for the product
+
+** *Tax*: Product Tax Details
+
+*** *UniqueId*    {blank}   `string`
++
+TAX Unique Id
+
+*** *TaxCode*    {blank}   `string`
++
+TAX Code
+
+*** *Percentage*    {blank}   `decimal`
++
+TAX Percentage
+
+*** *Value*    {blank}   `decimal`
++
+TAX Value
+
+** *Discount*    {blank}   `decimal`
++
+Discount Amount for the item
+
+** *DiscountPercentage*    {blank}   `decimal`
++
+Discount Percentage for the item
+
+** *TotalAmount*    {blank}   `decimal`
++
+Product Total Amount
+
+* *Customer*: Customer inputs
+
+** *UniqueId*    {blank}   `string`
++
+Customer Unique Id
+
+** *Name*    {blank}   `string`
++
+Customer Name
+
+** *Phone*    {blank}   `string`
++
+Customer Phone Number
+
+** *Email*    {blank}   `string`
++
+Customer Email Id
+
+** Address: Customer address inputs
+
+*** *Address1*    {blank}   `string`
++
+Address Line 1
+
+*** *Address2*    {blank}   `string`
++
+Address Line 2
+
+*** *City*    {blank}   `string`
++
+City name of the Customer
+
+*** *Country*    {blank}   `string`
++
+Country name of the Customer
+
+*** *Area*    {blank}   `string`
++
+Area Name of the Customer
+
+** *UseSameDeliveryAddress*    {blank}   `string`
++
+set "Y" for same delivery address else set "N"
+
+** *DeliveryAddress*: Delivery address details
+
+*** *Address1*    {blank}   `string`
++
+Address Line 1
+
+*** *Address2*    {blank}   `string`
++
+Address Line 2
+
+*** *City*    {blank}   `string`
++
+City name
+
+*** *Country*    {blank}   `string`
++
+Country Name
+
+*** *Area*    {blank}   `string`
++
+Area Name
+
+* *Salesman*: Salesman Details
+
+** *UniqueId*    {blank}   `string`
++
+Salesman Unique Id
+
+** *Name*    {blank}   `string`
++
+Salesman Name
+
+* *Payment*: Payment Details
+
+** *UniqueId*    {blank}   `string`
++
+Payment Unique Id
+
+** *Type*    {blank}   `string`
++
+Payment Type Name
+
+** *Amount*    {blank}   `decimal`
++
+Pay Amount
+
+** *Tender*    {blank}   `decimal`
++
+Tender Amount
+
+** *Change*    {blank}   `decimal`
++
+Change Amount
+
+** *Reference*    {blank}   `string`
++
+Payment Reference
+====
+
+
+Response::
++
+
+[source,json]
+----
+{
+  "IsSuccess": true,
+  "Data": "string",
+  "Errors": "string"
+}
+----
+
+
+Error::
+In case of errors, the API will respond with an appropriate HTTP status code and a JSON error message.
++
+
+[source,json]
+----
+{
+  "IsSuccess": true,
+  "Data": "string",
+  "Errors": "string"
+}
+
+----
+
+
+======
+
+
+
+== Error Codes and Messages
+Use your error code or message to troubleshoot problems with the API.
+
+
+[cols="1", grid=rows, frame=none]
+|====
+
+|*Error Code:* `JSON_001`
+
+*Message:* Error while getting data from JSON
+
+*Problem:* Invalid request data
+
+|*Error Code:* `COMPGRP_001`
+
+*Message:* Invalid Comp Group
+
+*Problem:* Invalid company group
+
+
+|*Error Code:* `COMP_001`
+
+*Message:* Invalid Comp Code
+
+*Problem:* Invalid company code
+
+
+|*Error Code:* `REC_001`
+
+*Message:* Parameter I_API_SYS_ID is passed null
+
+*Problem:* Parameter I_API_SYS_ID is passed null
+
+
+|*Error Code:* `REC_002`
+
+*Message:* not present in import table or JSON data missing
+
+*Problem:* Invalid/Input data missing
+
+
+|*Error Code:* `REC_003`
+
+*Message:* Imported
+
+*Problem:* Invoice already imported to the system
+
+
+|*Error Code:* `LOCN_0001`
+
+*Message:* Location Code in JSON is null
+
+*Problem:* Location code in input data is null
+
+
+|*Error Code:* `LOCN_0002`
+
+*Message:* No location found in our system with code given in JSON
+
+*Problem:* No matching location was found in the system for the code provided in the input data.
+
+
+|*Error Code:* `CURR_0001`
+
+*Message:* Currency Code in JSON is null
+
+*Problem:* Currency Code in input data is null
+
+
+|*Error Code:* `CURR_0002`
+
+*Message:* No Currency found in our system with code given in JSON
+
+*Problem:* Provided currency is not found in our system with given code
+
+
+|*Error Code:* `INV_0004`
+
+*Message:* Invoice Date value in JSON is null
+
+*Problem:* Invoice Date value in input data is null
+
+
+|*Error Code:* `INV_0005`
+
+*Message:* Format is not DD-MM-YYYY
+
+*Problem:* Format is not DD-MM-YYYY
+
+
+|*Error Code:* `TXN_0001`
+
+*Message:* Transaction details not found in JSON
+
+*Problem:* Transaction details not found in input data
+
+
+|*Error Code:* `TXN_0002`
+
+*Message:* Data not present in ADM_TXN master table
+
+*Problem:* Data not present in Transaction setup master
+
+
+|*Error Code:* `TXN_0003`
+
+*Message:* Transaction code not set for the company
+
+*Problem:* Transaction code not set for the company
+
+
+|*Error Code:* `CUST_0001`
+
+*Message:* Customer unique id in json is null
+
+*Problem:* Customer unique id in input data is null
+
+
+|*Error Code:* `CUST_0002`
+
+*Message:* Customer not mapped in FF and autogen flag also N
+
+*Problem:* Customer not mapped in the flexi field and autogen flag also N. So new customer can't be created.
+
+
+|*Error Code:* `SM_0001`
+
+*Message:* Salesman unique id in json is null
+
+*Problem:* Salesman unique id in input data is null
+
+
+|*Error Code:* `SM_0002`
+
+*Message:* Salesman not mapped in FF and autogen flag also N
+
+*Problem:* Salesman not mapped in the flexi field and autogen flag also N. So new salesman can't be created.
+
+
+|*Error Code:* `ITM_0001`
+
+*Message:* Item unique id is null in json
+
+*Problem:* Item unique id is null in input data
+
+
+|*Error Code:* `ITM_0002`
+
+*Message:* Item name is null in json
+
+*Problem:* Item name is null in input data
+
+
+|*Error Code:* ITM_0003
+
+*Message:* SKU is null in json
+
+*Problem:* Barcode is null in input data
+
+
+|*Error Code:* `ITM_0004`
+
+*Message:* Price is null in json
+
+*Problem:* Price is null in input data
+
+
+|*Error Code:* `ITM_0005`
+
+*Message:* TaxesIncluded is null in json
+
+*Problem:* TaxesIncluded is null in input data
+
+
+|*Error Code:* `HED_001`
+
+*Message:* Header TaxesIncluded value in json is null or not in Y/N
+
+*Problem:* Header TaxesIncluded value in input data is null or not in Y/N
+
+
+|*Error Code:* `ITM_0006`
+
+*Message:* Mismatch in header and item tax
+
+*Problem:* Mismatch in header and item tax
+
+
+|*Error Code:* `ITM_0007`
+
+*Message:* Item mapping not found in FF and also not present in our system
+
+*Problem:* Item mapping is not found in flexi field and also not present in our system
+
+
+|*Error Code:* `ITM_0008`
+
+*Message:* Item mapped in FF but header sys id value not present in om_item table
+
+*Problem:* Item mapped in flexi field but header sys id value not present in om_item table
+
+
+|*Error Code:* `TAX_0001`
+
+*Message:* TAX unique id present but tax code is null in JSON
+
+*Problem:* TAX unique id present but tax code is null in input data
+
+
+|*Error Code:* `TAX_0002`
+
+*Message:* TAX mapping not found in FF and also not present in our system
+
+*Problem:* TAX mapping is not found in flexi field and also not present in our system
+
+
+|*Error Code:* `PAY_0001`
+
+*Message:* Payment uniqueid not found in JSON data
+
+*Problem:* Payment uniqueid not found in input data data
+
+
+|*Error Code:* `PAY_0002`
+
+*Message:* Payment Name not found in JSON data
+
+*Problem:* Payment Name not found in input data data
+
+
+|*Error Code:* `PAY_0003`
+
+*Message:* Payment amount not found or invalid in JSON data
+
+*Problem:* Payment amount not found or invalid in input data
+
+
+|*Error Code:* `PAY_0004`
+
+*Message:* Payment Name not linked in FF and with same payment name , multiple data found in our system
+
+*Problem:* Payment Name not linked in FF and with the same payment name, multiple data found in our system
+
+
+|*Error Code:* `PAY_0005`
+
+*Message:* Payment Name not linked in FF and payment name not found in our system
+
+*Problem:* Payment Name not linked in flexi field and payment name not found in our system
+
+
+|*Error Code:* `SM_0003`
+
+*Message:* More than 1 record found with same name in our system and not linked to FF
+
+*Problem:* More than 1 record found with same name in our system and not linked to flexi field
+
+
+|*Error Code:* `CUST_0003`
+
+*Message:* More than 1 record found with same name in our system and not linked to FF
+
+*Problem:* More than 1 record found with same name in our system and not linked to flexi field
+
+
+|*Error Code:* `CUST_0004`
+
+*Message:* Check in customer table with code
+
+*Problem:* Check in customer table with code
+
+
+|*Error Code:* `REC_0004`
+
+*Message:* More than 1 record found in header
+
+*Problem:* More than 1 record found in header
+
+
+|*Error Code:* `ITM_0009`
+
+*Message:* No item details given in JSON
+
+*Problem:* No item details given in input data
+
+
+|*Error Code:* `ITM_0010`
+
+*Message:* Not Enough Stock
+
+*Problem:* There are not enough stocks available
+
+
+|*Error Code:* `REC_0011`
+
+*Message:* in ADM_INTGRTED_API_IMPORT, unique id is duplicated
+
+*Problem:* The unique id is duplicated in the import section
+
+
+|*Error Code:* `REC_0012`
+
+*Message:* IN PARAMETER
+
+*Problem:* Missing Client ID in parameter(parameter cilent id is passed as null)
+
+
+|*Error Code:* `REC_0013`
+
+*Message:* IN PARAMETER
+
+*Problem:* Missing Location code in parameter(parameter location code is passed as null)
+
+
+|*Error Code:* `REC_0014`
+
+*Message:* in API setting table
+
+*Problem:* Missing Division Code (based on client id and location code will check division code from API setting table. If it's null, then this error is thrown)
+
+
+|*Error Code:* `REC_0015`
+
+*Message:* not present in our system
+
+*Problem:* Invalid Division Code (based on client id and location code will check division code from API setting table. If it's present and not present in division master, then this error is thrown)
+
+
+|*Error Code:* `CUST_0005`
+
+*Message:* Set up - prefix CUSTSFX not found
+
+*Problem:* Set up - prefix CUSTSFX not found
+
+
+|*Error Code:* `CUST_0006`
+
+*Message:* Cust area name is there in JSON but city or country details are missing
+
+*Problem:* Customer area name is there in input data, but city or country details are missing
+
+
+|*Error Code:* `CUST_0007`
+
+*Message:* Cust City name is there in JSON but country detail is missing
+
+*Problem:* Customer City name is there in input data, but country detail is missing
+
+
+|*Error Code:* `CUST_0008`
+
+*Message:* Country Name not exists
+
+*Problem:* Provided Country Name does not exist
+
+
+|*Error Code:* `CUST_0009`
+
+*Message:* City Name not exists
+
+*Problem:* Provided City Name does not exist
+
+
+|*Error Code:* `CUST_0010`
+
+*Message:* Area Name not exists
+
+*Problem:* Provided Area Name does not exist
+
+
+|*Error Code:* `TAX_0005`
+
+*Message:* TAX_BASED field from OM_TAX table is missing
+
+*Problem:* Group tax or Item tax is missing in Tax master
+
+
+|*Error Code:* `TAX_0006`
+
+*Message:* item not found in table OS_TAX_ITM_SETUP
+
+*Problem:* Item not found in table item setup in tax master
+
+
+|*Error Code:* `TAX_0007`
+
+*Message:* item grp not found in table OS_TAX_ITM_GRP_SETUP
+
+*Problem:* Item group not found in table group setup in tax master
+
+
+|*Error Code:* `CUST_0011`
+
+*Message:* Cust delivery area name is there in JSON but city or country details are missing
+
+*Problem:* Customer delivery area name is there in input data but city or country details are missing
+
+
+|*Error Code:* `CUST_0012`
+
+*Message:* Cust delivery City name is there in JSON but country detail is missing
+
+*Problem:* Customer delivery City name is there in input data, but country detail is missing
+
+
+|*Error Code:* `CUST_0013`
+
+*Message:* Country Name not exists
+
+*Problem:* Provided Country Name does not exist
+
+
+|*Error Code:* `CUST_0014`
+
+*Message:* City Name not exists
+
+*Problem:* Provided City Name does not exist
+
+
+|*Error Code:* `CUST_0015`
+
+*Message:* Area Name not exists
+
+*Problem:* Provided Area Name does not exist
+
+
+|*Error Code:* `INV0000`
+
+*Message:* General Exception
+
+*Problem:* General Exception with error details
+
+
+|*Error Code:* `INV0001`
+
+*Message:* Unique Id is required
+
+*Problem:* Unique Id is required
+
+
+|*Error Code:* `INV0002`
+
+*Message:* Transaction Type is required
+
+*Problem:* Transaction Type is required
+
+
+|*Error Code:* `INV0003`
+
+*Message:* Invalid Transaction Type
+
+*Problem:* Invalid Transaction Type
+
+
+|*Error Code:* `INV0004`
+
+*Message:* Transaction Code is required
+
+*Problem:* Transaction Code is required
+
+
+|*Error Code:* `INV0005`
+
+*Message:* Invalid Tax Included
+
+*Problem:* Invalid Tax Included
+
+
+|*Error Code:* `INV0006`
+
+*Message:* Location Code is required
+
+*Problem:* Location Code is required
+
+|====

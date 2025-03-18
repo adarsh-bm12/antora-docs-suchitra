@@ -1,0 +1,12 @@
+[tabs]
+====
+Body:: `Teachers/ID`
+
+
+Field Description::
++
+** *ID*    {blank}   `int`
++
+Teacher ID
+
+====

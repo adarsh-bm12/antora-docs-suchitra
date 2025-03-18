@@ -1,0 +1,272 @@
+= Page Title
+:tabs:
+
+
+
+[tabs]
+======
+Header Parameter::
++
+* *DocId*    {blank}   `string`
++
+Unique Id Of Document
+
+* *txnCode*    {blank}   `string`
++
+Transaction code
+
+
+Query Parameter::
++
+* *SecretKey*    {blank}   `string`
++
+API Secret Key
+
+* *ClientId*    {blank}   `string`
++
+Client Id For API
+
+
+
+Request::
+*URL:*
++
+[source,http]
+----
+/Invoice/Create
+----
++
+[tabs]
+====
+
+Body::
++
+[source,json]
+----
+{
+  "redirecturl": "string",
+  "Data": {
+    "UniqueId": "string",
+    "TransactionType": "string",
+    "TransactionCode": "string",
+    "LocationCode": "string",
+    "ReferenceId": "string",
+    "CurrencyCode": "string",
+    "Note": "string",
+    "Number": "string",
+    "Date": "string",
+    "ItemTotal": 0,
+    "Discount": 0,
+    "DiscountPercentage": 0,
+    "TaxesIncluded": "string",
+    "TAX": [
+      {
+        "UniqueId": "string",
+        "TaxCode": "string",
+        "Percentage": 0,
+        "Value": 0
+      }
+    ],
+    "SubTotal": 0,
+    "TotalTax": 0,
+    "TotalAmount": 0,
+    "Items": [
+      {
+        "UniqueId": "string",
+        "ProductTitle": "string",
+        "SKU": "string",
+        "Quantity": 0,
+        "Price": 0,
+        "SubTotal": 0,
+        "TotalTax": 0,
+        "TaxesIncluded": "string",
+        "TAX": [
+          {
+            "UniqueId": "string",
+            "TaxCode": "string",
+            "Percentage": 0,
+            "Value": 0
+          }
+        ],
+        "Discount": 0,
+        "DiscountPercentage": 0,
+        "TotalAmount": 0
+      }
+    ],
+    "Customer": {
+      "UniqueId": "string",
+      "Name": "string",
+      "Phone": "string",
+      "Email": "string",
+      "Address": {
+        "Address1": "string",
+        "Address2": "string",
+        "City": "string",
+        "Country": "string",
+        "Area": "string"
+      },
+      "UseSameDeliveryAddress": "string",
+      "DeliveryAddress": {
+        "Address1": "string",
+        "Address2": "string",
+        "City": "string",
+        "Country": "string",
+        "Area": "string"
+      }
+    },
+    "Salesman": {
+      "UniqueId": "string",
+      "Name": "string"
+    },
+    "Payment": [
+      {
+        "UniqueId": "string",
+        "Type": "string",
+        "Amount": 0,
+        "Tender": 0,
+        "Change": 0,
+        "Reference": "string"
+      }
+    ]
+  }
+}
+----
+
+Sample Value::
++
+[source,json]
+----
+{
+  "redirecturl": "string",
+  "Data": {
+    "UniqueId": "string",
+    "TransactionType": "string",
+    "TransactionCode": "string",
+    "LocationCode": "string",
+    "ReferenceId": "string",
+    "CurrencyCode": "string",
+    "Note": "string",
+    "Number": "string",
+    "Date": "string",
+    "ItemTotal": 0,
+    "Discount": 0,
+    "DiscountPercentage": 0,
+    "TaxesIncluded": "string",
+    "TAX": [
+      {
+        "UniqueId": "string",
+        "TaxCode": "string",
+        "Percentage": 0,
+        "Value": 0
+      }
+    ],
+    "SubTotal": 0,
+    "TotalTax": 0,
+    "TotalAmount": 0,
+    "Items": [
+      {
+        "UniqueId": "string",
+        "ProductTitle": "string",
+        "SKU": "string",
+        "Quantity": 0,
+        "Price": 0,
+        "SubTotal": 0,
+        "TotalTax": 0,
+        "TaxesIncluded": "string",
+        "TAX": [
+          {
+            "UniqueId": "string",
+            "TaxCode": "string",
+            "Percentage": 0,
+            "Value": 0
+          }
+        ],
+        "Discount": 0,
+        "DiscountPercentage": 0,
+        "TotalAmount": 0
+      }
+    ],
+    "Customer": {
+      "UniqueId": "string",
+      "Name": "string",
+      "Phone": "string",
+      "Email": "string",
+      "Address": {
+        "Address1": "string",
+        "Address2": "string",
+        "City": "string",
+        "Country": "string",
+        "Area": "string"
+      },
+      "UseSameDeliveryAddress": "string",
+      "DeliveryAddress": {
+        "Address1": "string",
+        "Address2": "string",
+        "City": "string",
+        "Country": "string",
+        "Area": "string"
+      }
+    },
+    "Salesman": {
+      "UniqueId": "string",
+      "Name": "string"
+    },
+    "Payment": [
+      {
+        "UniqueId": "string",
+        "Type": "string",
+        "Amount": 0,
+        "Tender": 0,
+        "Change": 0,
+        "Reference": "string"
+      }
+    ]
+  }
+}
+----
+
+====
+
+
+Response::
++
+
+[source,json]
+----
+{
+  "IsSuccess": true,
+  "Data": "string",
+  "Errors": "string"
+}
+----
+
+
+Error::
+In case of errors, the API will respond with an appropriate HTTP status code and a JSON error message.
++
+
+[source,json]
+----
+{
+  "IsSuccess": true,
+  "Data": "string",
+  "Errors": "string"
+}
+
+----
+
+
+======
+
+
+
+== Error Codes and Messages
+Use your error code or message to troubleshoot problems with the API.
+
+=== Error Code: 1
+
+*Message:*
+
+*Problem:*
+
+*Solution:*

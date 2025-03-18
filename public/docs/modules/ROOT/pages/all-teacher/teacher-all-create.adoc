@@ -1,0 +1,33 @@
+= `GET` Get All Teacher Information
+
+== Overview
+
+This API is to retrives all the Teacher data with student information
+
+== API details
+
+include::teacher-all-create-copy.adoc[]
+
+
+== Error Codes and Messages
+Use your error code or message to troubleshoot problems with the API.
+
+
+[cols="1", grid=rows, frame=none]
+|====
+
+|*Error Code:* `INV0001`
+
+*Message:* Null data
+
+*Problem:* Teacher ID can't be null
+
+
+|*Error Code:* `INV0002`
+
+*Message:* Invalid Teacher ID
+
+*Problem:* Teacher ID does not exist
+
+
+|====

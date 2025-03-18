@@ -1,0 +1,15 @@
+# Ignore Node.js dependencies
+node_modules/
+package-lock.json
+
+# Ignore UI bundle if downloaded manually
+ui-bundle.zip
+
+# Ignore cache files
+.antora-cache/
+
+# Ignore MacOS system files
+.DS_Store
+.DS_Store 
+package-lock.json 
+.antora-cache/ 

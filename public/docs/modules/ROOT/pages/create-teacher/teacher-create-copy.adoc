@@ -1,0 +1,23 @@
+[tabs]
+======
+Header Parameter::
++
+* *SecretKey*    {blank}   `string`
++
+API Secret Key based on API settings
+
+* *SchoolId*    {blank}   `string`
++
+School Id For API based on API settings
++
+
+Request:: *URL:* `/Teachers/Create`
++
+include::request-teacher.adoc[]
+
+
+Response::
++
+include::response-teacher.adoc[]
+
+======
