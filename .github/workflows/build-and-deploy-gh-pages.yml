@@ -16,7 +16,7 @@ jobs:
           node-version: '16'
 
       - run: npm install
-      - run: npx antora antora-playbook.yml --to-dir=html --url=https://suchithrabn.github.io/antora-docs
+      - run: npx antora antora-playbook.yml --to-dir=html --url=https://adarsh-bm12.github.io/antora-docs-suchitra
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4.2.3
