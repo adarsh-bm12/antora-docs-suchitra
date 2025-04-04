@@ -4,7 +4,7 @@ site:
 
 content:
   sources:
-    - url: https://github.com/SuchithraBN/antora-docs.git
+    - url: https://github.com/adarsh-bm12/antora-docs-suchitra.git
       branches: main   # Adjust branch name if needed
       start_path: docs  # Change if your AsciiDoc files are in a different folderAdjust this based on your folder structure
 
