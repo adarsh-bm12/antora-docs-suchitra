@@ -1,0 +1,1230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>GET Invoice document status :: My API Document</title>
+    <link rel="canonical" href="https://vebholic.github.io/docs/docs/1.0/test.html">
+    <meta name="generator" content="Antora 3.1.10">
+
+<link rel="stylesheet" title="Default" href="../../_/css/site.css">
+
+
+
+
+<script>var uiRootPath = '../../_'</script>
+<script src="../../_/js/vendor/medium-zoom.js"></script>
+<script type="text/javascript" id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="e4db29b5-cd94-4bcf-87e4-04f4ca564240" data-blockingmode="manual"></script>
+<!-- Matomo -->
+<script>
+  var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="https://lisk.matomo.cloud/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '2']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.async=true; g.src='//cdn.matomo.cloud/lisk.matomo.cloud/matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Matomo Code -->
+<!-- Matomo Tag Manager -->
+<script>
+  var _mtm = window._mtm = window._mtm || [];
+  _mtm.push({'mtm.startTime': (new Date().getTime()), 'event': 'mtm.Start'});
+  var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+  g.async=true; g.src='https://cdn.matomo.cloud/lisk.matomo.cloud/container_RUW6y8yf.js'; s.parentNode.insertBefore(g,s);
+</script>
+<!-- End Matomo Tag Manager -->
+<link rel="icon" href="../../_/img/suite-icon.png" type="image/x-icon">
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="#">My API Document</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">APIs</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="../../home/current/index.html">Nymbl Suite API</a>
+            <a class="navbar-item" href="../../shopify-api/current/index.html">Shopify Integration API</a>
+          </div>
+        </div>
+
+
+        <!-- <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="#">Download</a>
+          </span>
+        </div> -->
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="toolbar" role="navigation">
+  <button class="nav-toggle"></button>
+  <div class="components-versions">
+      <div class="context">
+    <span class="title">My API Document</span>
+    <span class="version">1.0</span>
+    <span class="version"></span>
+    <span class="version"></span>
+  </div>
+    <span></span>
+      </div>
+  <span></span>
+  <span></span>
+    <a href="index.html" class="home-link"></a>
+  <nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="index.html">My API Document</a></li>
+    <li><a href="test.html"><code>GET</code> Invoice document status</a></li>
+  </ul>
+</nav>
+</div>
+
+<div class="body">
+<div class="nav-container" data-component="docs" data-version="1.0">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="index.html">My API Document</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="intro.html">Introduction</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="all-teacher/teacher-all-create.html"><code>GET</code> Get All Teacher Information</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="create-teacher/teacher-create.html"><code>POST</code> Teacher create</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">My API Document</span>
+    <span class="version">1.0</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="index.html">My API Document</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="index.html">1.0</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+      <h1 class="page"><code>GET</code> Invoice document status</h1>
+    <div class="sect1">
+<h2 id="_overview"><a class="anchor" href="#_overview"></a>Overview</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>This API is to get invoice document status.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_api_details"><a class="anchor" href="#_api_details"></a>API details</h2>
+<div class="sectionbody">
+<div class="exampleblock">
+<div class="content">
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Header Parameter</dt>
+<dd>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>SecretKey</strong>       <code>string</code></p>
+<div class="paragraph">
+<p>API Secret Key</p>
+</div>
+</li>
+<li>
+<p><strong>ClientId</strong>       <code>string</code></p>
+<div class="paragraph">
+<p>Client Id For API</p>
+</div>
+</li>
+</ul>
+</div>
+</dd>
+<dt class="hdlist1">Query Parameter</dt>
+<dd>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>DocId</strong>       <code>string</code></p>
+<div class="paragraph">
+<p>Unique Id Of Document</p>
+</div>
+</li>
+<li>
+<p><strong>txnCode</strong>       <code>string</code></p>
+<div class="paragraph">
+<p>Transaction code</p>
+</div>
+</li>
+</ul>
+</div>
+</dd>
+<dt class="hdlist1">Request</dt>
+<dd>
+<p><strong>URL:</strong></p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-http hljs" data-lang="http">URL: /Invoice/DocumentStatus</code></pre>
+</div>
+</div>
+<div class="exampleblock">
+<div class="content">
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Body</dt>
+<dd>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-json hljs" data-lang="json">{
+  "redirecturl": "string",
+  "Data": {
+    "UniqueId": "string",
+    "TransactionType": "string",
+    "TransactionCode": "string",
+    "LocationCode": "string",
+    "ReferenceId": "string",
+    "CurrencyCode": "string",
+    "Note": "string",
+    "Number": "string",
+    "Date": "string",
+    "ItemTotal": 0,
+    "Discount": 0,
+    "DiscountPercentage": 0,
+    "TaxesIncluded": "string",
+    "SubTotal": 0,
+    "TAX": [
+      {
+        "UniqueId": "string",
+        "TaxCode": "string",
+        "Percentage": 0,
+        "Value": 0
+      }
+    ],
+
+    "TotalTax": 0,
+    "TotalAmount": 0,
+    "Items": [
+      {
+        "UniqueId": "string",
+        "ProductTitle": "string",
+        "SKU": "string",
+        "Quantity": 0,
+        "Price": 0,
+        "SubTotal": 0,
+        "TotalTax": 0,
+        "TaxesIncluded": "string",
+        "TAX": [
+          {
+            "UniqueId": "string",
+            "TaxCode": "string",
+            "Percentage": 0,
+            "Value": 0
+          }
+        ],
+        "Discount": 0,
+        "DiscountPercentage": 0,
+        "TotalAmount": 0
+      }
+    ],
+    "Customer": {
+      "UniqueId": "string",
+      "Name": "string",
+      "Phone": "string",
+      "Email": "string",
+      "Address": {
+        "Address1": "string",
+        "Address2": "string",
+        "City": "string",
+        "Country": "string",
+        "Area": "string"
+      },
+      "UseSameDeliveryAddress": "string",
+      "DeliveryAddress": {
+        "Address1": "string",
+        "Address2": "string",
+        "City": "string",
+        "Country": "string",
+        "Area": "string"
+      }
+    },
+    "Salesman": {
+      "UniqueId": "string",
+      "Name": "string"
+    },
+    "Payment": [
+      {
+        "UniqueId": "string",
+        "Type": "string",
+        "Amount": 0,
+        "Tender": 0,
+        "Change": 0,
+        "Reference": "string"
+      }
+    ]
+  }
+}</code></pre>
+</div>
+</div>
+</dd>
+<dt class="hdlist1">Sample Value</dt>
+<dd>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-json hljs" data-lang="json">{
+  "redirecturl": "",
+  "Data": {
+    "UniqueId": "123458",
+    "TransactionType": "Invoice",
+    "TransactionCode": "INV",
+    "LocationCode": "S01",
+    "ReferenceId": "",
+    "CurrencyCode": "AED",
+    "Note": "",
+    "Number": "325",
+    "Date": "24-11-2023",
+    "ItemTotal": 525.0,
+    "Discount": 0.0,
+    "DiscountPercentage": 0.0,
+    "TaxesIncluded": "N",
+    "TAX": [],
+    "SubTotal": 500.0,
+    "TotalTax": 25.0,
+    "TotalAmount": 525.0,
+    "Items": [
+        {
+            "UniqueId": "1586",
+            "ProductTitle": "Basumati rice",
+            "SKU": "I0000178QA7",
+            "Quantity": 10,
+            "Price": 50,
+            "SubTotal": 500,
+            "TotalTax": 25,
+            "TaxesIncluded": "N",
+            "TAX": [
+                {
+                    "UniqueId": "1256",
+                    "TaxCode": "VAT05",
+                    "Percentage": 5,
+                    "Value": 25
+                }
+            ],
+            "Discount": 0,
+            "DiscountPercentage": 0,
+            "TotalAmount": 525
+        }
+    ],
+    "Customer": {
+        "UniqueId": "125",
+        "Name": "Nymbl Customer",
+        "Phone": "155232626",
+        "Email": "ny45464@hjjk.com",
+        "Address": {
+            "Address1": "nothing",
+            "Address2": "",
+            "City": "Abu Dhabi",
+            "Country": "UAE",
+            "Area": "Al Aman"
+        },
+        "UseSameDeliveryAddress": "Y",
+        "DeliveryAddress": {
+            "Address1": "",
+            "Address2": "",
+            "City": "",
+            "Country": "",
+            "Area": ""
+        }
+    },
+    "Salesman": {
+        "UniqueId": "",
+        "Name": "Default Salesman"
+    },
+    "Payment": [
+        {
+            "UniqueId": "",
+            "Type": "CASH",
+            "Amount": 525,
+            "Tender": 0,
+            "Change": 0,
+            "Reference": ""
+        }
+    ]
+}
+}</code></pre>
+</div>
+</div>
+</dd>
+<dt class="hdlist1">Field Description</dt>
+<dd>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>redirecturl</strong>       <code>string</code></p>
+<div class="paragraph">
+<p>Call back URL</p>
+</div>
+</li>
+<li>
+<p><strong>UniqueId</strong>       <code>string</code></p>
+<div class="paragraph">
+<p>Invoice Unique Id</p>
+</div>
+</li>
+<li>
+<p><strong>TransactionType</strong>       <code>string</code></p>
+<div class="paragraph">
+<p>Transaction type: Invoice or Return</p>
+</div>
+</li>
+<li>
+<p><strong>TransactionCode</strong>       <code>string</code></p>
+<div class="paragraph">
+<p>transaction Code</p>
+</div>
+</li>
+<li>
+<p><strong>LocationCode</strong>       <code>string</code></p>
+<div class="paragraph">
+<p>Location code defined through this page will be auto fetched else we have to manually provide in code.</p>
+</div>
+</li>
+<li>
+<p><strong>ReferenceId</strong>       <code>string</code></p>
+<div class="paragraph">
+<p>Unique Id For Reference</p>
+</div>
+</li>
+<li>
+<p><strong>CurrencyCode</strong>       <code>string</code></p>
+<div class="paragraph">
+<p>Invoice currency Code</p>
+</div>
+</li>
+<li>
+<p><strong>Note</strong>       <code>string</code></p>
+<div class="paragraph">
+<p>Invoice Note</p>
+</div>
+</li>
+<li>
+<p><strong>Number</strong>       <code>string</code></p>
+<div class="paragraph">
+<p>Invoice Number</p>
+</div>
+</li>
+<li>
+<p><strong>Date</strong>       <code>string</code></p>
+<div class="paragraph">
+<p>Invoice date format should be dd-mm-yyyy (28-12-2023)</p>
+</div>
+</li>
+<li>
+<p><strong>ItemTotal</strong>       <code>decimal</code></p>
+<div class="paragraph">
+<p>Product total amount</p>
+</div>
+</li>
+<li>
+<p><strong>Discount</strong>       <code>decimal</code></p>
+<div class="paragraph">
+<p>Header discount</p>
+</div>
+</li>
+<li>
+<p><strong>DiscountPercentage</strong>       <code>decimal</code></p>
+<div class="paragraph">
+<p>Header discount percentage (If we provide discount percentage, also provide calculated value in discount)</p>
+</div>
+</li>
+<li>
+<p><strong>TaxesIncluded</strong>       <code>string</code></p>
+<div class="paragraph">
+<p>If Tax Included set <code>"Y"</code> for Yes and <code>"N"</code> for No</p>
+</div>
+</li>
+<li>
+<p><strong>SubTotal</strong>       <code>decimal</code></p>
+<div class="paragraph">
+<p>Sub total Amount</p>
+</div>
+</li>
+<li>
+<p><strong>Tax</strong>: Invoice tax details</p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>UniqueId</strong>       <code>string</code></p>
+<div class="paragraph">
+<p>TAX Unique Id</p>
+</div>
+</li>
+<li>
+<p><strong>TaxCode</strong>       <code>string</code></p>
+<div class="paragraph">
+<p>TAX Code</p>
+</div>
+</li>
+<li>
+<p><strong>Percentage</strong>       <code>decimal</code></p>
+<div class="paragraph">
+<p>TAX Percentage</p>
+</div>
+</li>
+<li>
+<p><strong>Value</strong>       <code>decimal</code></p>
+<div class="paragraph">
+<p>TAX Value</p>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><strong>TotalTax</strong>       <code>decimal</code></p>
+<div class="paragraph">
+<p>Total tax amount for the invoice</p>
+</div>
+</li>
+<li>
+<p><strong>TotalAmount</strong>       <code>decimal</code></p>
+<div class="paragraph">
+<p>Total Amount of the invoice</p>
+</div>
+</li>
+<li>
+<p><strong>Items</strong>: Item details</p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>UniqueId</strong>       <code>string</code></p>
+<div class="paragraph">
+<p>Product Unique Id</p>
+</div>
+</li>
+<li>
+<p><strong>ProductTitle</strong>       <code>string</code></p>
+<div class="paragraph">
+<p>Product Title</p>
+</div>
+</li>
+<li>
+<p><strong>SKU</strong>       <code>string</code></p>
+<div class="paragraph">
+<p>Product barcode</p>
+</div>
+</li>
+<li>
+<p><strong>Quantity</strong>       <code>decimal</code></p>
+<div class="paragraph">
+<p>Product Quantity</p>
+</div>
+</li>
+<li>
+<p><strong>Price</strong>       <code>decimal</code></p>
+<div class="paragraph">
+<p>Product Unit Price</p>
+</div>
+</li>
+<li>
+<p><strong>SubTotal</strong>       <code>decimal</code></p>
+<div class="paragraph">
+<p>Product sub total (Quantity*Price)</p>
+</div>
+</li>
+<li>
+<p><strong>TotalTax</strong>       <code>decimal</code></p>
+<div class="paragraph">
+<p>Product Total Tax Amount</p>
+</div>
+</li>
+<li>
+<p><strong>TaxesIncluded</strong>       <code>string</code></p>
+<div class="paragraph">
+<p>Tax is included for the product</p>
+</div>
+</li>
+<li>
+<p><strong>Tax</strong>: Product Tax Details</p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>UniqueId</strong>       <code>string</code></p>
+<div class="paragraph">
+<p>TAX Unique Id</p>
+</div>
+</li>
+<li>
+<p><strong>TaxCode</strong>       <code>string</code></p>
+<div class="paragraph">
+<p>TAX Code</p>
+</div>
+</li>
+<li>
+<p><strong>Percentage</strong>       <code>decimal</code></p>
+<div class="paragraph">
+<p>TAX Percentage</p>
+</div>
+</li>
+<li>
+<p><strong>Value</strong>       <code>decimal</code></p>
+<div class="paragraph">
+<p>TAX Value</p>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><strong>Discount</strong>       <code>decimal</code></p>
+<div class="paragraph">
+<p>Discount Amount for the item</p>
+</div>
+</li>
+<li>
+<p><strong>DiscountPercentage</strong>       <code>decimal</code></p>
+<div class="paragraph">
+<p>Discount Percentage for the item</p>
+</div>
+</li>
+<li>
+<p><strong>TotalAmount</strong>       <code>decimal</code></p>
+<div class="paragraph">
+<p>Product Total Amount</p>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><strong>Customer</strong>: Customer inputs</p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>UniqueId</strong>       <code>string</code></p>
+<div class="paragraph">
+<p>Customer Unique Id</p>
+</div>
+</li>
+<li>
+<p><strong>Name</strong>       <code>string</code></p>
+<div class="paragraph">
+<p>Customer Name</p>
+</div>
+</li>
+<li>
+<p><strong>Phone</strong>       <code>string</code></p>
+<div class="paragraph">
+<p>Customer Phone Number</p>
+</div>
+</li>
+<li>
+<p><strong>Email</strong>       <code>string</code></p>
+<div class="paragraph">
+<p>Customer Email Id</p>
+</div>
+</li>
+<li>
+<p>Address: Customer address inputs</p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Address1</strong>       <code>string</code></p>
+<div class="paragraph">
+<p>Address Line 1</p>
+</div>
+</li>
+<li>
+<p><strong>Address2</strong>       <code>string</code></p>
+<div class="paragraph">
+<p>Address Line 2</p>
+</div>
+</li>
+<li>
+<p><strong>City</strong>       <code>string</code></p>
+<div class="paragraph">
+<p>City name of the Customer</p>
+</div>
+</li>
+<li>
+<p><strong>Country</strong>       <code>string</code></p>
+<div class="paragraph">
+<p>Country name of the Customer</p>
+</div>
+</li>
+<li>
+<p><strong>Area</strong>       <code>string</code></p>
+<div class="paragraph">
+<p>Area Name of the Customer</p>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><strong>UseSameDeliveryAddress</strong>       <code>string</code></p>
+<div class="paragraph">
+<p>set "Y" for same delivery address else set "N"</p>
+</div>
+</li>
+<li>
+<p><strong>DeliveryAddress</strong>: Delivery address details</p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Address1</strong>       <code>string</code></p>
+<div class="paragraph">
+<p>Address Line 1</p>
+</div>
+</li>
+<li>
+<p><strong>Address2</strong>       <code>string</code></p>
+<div class="paragraph">
+<p>Address Line 2</p>
+</div>
+</li>
+<li>
+<p><strong>City</strong>       <code>string</code></p>
+<div class="paragraph">
+<p>City name</p>
+</div>
+</li>
+<li>
+<p><strong>Country</strong>       <code>string</code></p>
+<div class="paragraph">
+<p>Country Name</p>
+</div>
+</li>
+<li>
+<p><strong>Area</strong>       <code>string</code></p>
+<div class="paragraph">
+<p>Area Name</p>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><strong>Salesman</strong>: Salesman Details</p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>UniqueId</strong>       <code>string</code></p>
+<div class="paragraph">
+<p>Salesman Unique Id</p>
+</div>
+</li>
+<li>
+<p><strong>Name</strong>       <code>string</code></p>
+<div class="paragraph">
+<p>Salesman Name</p>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><strong>Payment</strong>: Payment Details</p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>UniqueId</strong>       <code>string</code></p>
+<div class="paragraph">
+<p>Payment Unique Id</p>
+</div>
+</li>
+<li>
+<p><strong>Type</strong>       <code>string</code></p>
+<div class="paragraph">
+<p>Payment Type Name</p>
+</div>
+</li>
+<li>
+<p><strong>Amount</strong>       <code>decimal</code></p>
+<div class="paragraph">
+<p>Pay Amount</p>
+</div>
+</li>
+<li>
+<p><strong>Tender</strong>       <code>decimal</code></p>
+<div class="paragraph">
+<p>Tender Amount</p>
+</div>
+</li>
+<li>
+<p><strong>Change</strong>       <code>decimal</code></p>
+<div class="paragraph">
+<p>Change Amount</p>
+</div>
+</li>
+<li>
+<p><strong>Reference</strong>       <code>string</code></p>
+<div class="paragraph">
+<p>Payment Reference</p>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+</dd>
+<dt class="hdlist1">Response</dt>
+<dd>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-json hljs" data-lang="json">{
+  "IsSuccess": true,
+  "Data": "string",
+  "Errors": "string"
+}</code></pre>
+</div>
+</div>
+</dd>
+<dt class="hdlist1">Error</dt>
+<dd>
+<p>In case of errors, the API will respond with an appropriate HTTP status code and a JSON error message.</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-json hljs" data-lang="json">{
+  "IsSuccess": true,
+  "Data": "string",
+  "Errors": "string"
+}</code></pre>
+</div>
+</div>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_error_codes_and_messages"><a class="anchor" href="#_error_codes_and_messages"></a>Error Codes and Messages</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Use your error code or message to troubleshoot problems with the API.</p>
+</div>
+<table class="tableblock frame-none grid-rows stretch">
+<colgroup>
+<col style="width: 100%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Error Code:</strong> <code>JSON_001</code></p>
+<p class="tableblock"><strong>Message:</strong> Error while getting data from JSON</p>
+<p class="tableblock"><strong>Problem:</strong> Invalid request data</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Error Code:</strong> <code>COMPGRP_001</code></p>
+<p class="tableblock"><strong>Message:</strong> Invalid Comp Group</p>
+<p class="tableblock"><strong>Problem:</strong> Invalid company group</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Error Code:</strong> <code>COMP_001</code></p>
+<p class="tableblock"><strong>Message:</strong> Invalid Comp Code</p>
+<p class="tableblock"><strong>Problem:</strong> Invalid company code</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Error Code:</strong> <code>REC_001</code></p>
+<p class="tableblock"><strong>Message:</strong> Parameter I_API_SYS_ID is passed null</p>
+<p class="tableblock"><strong>Problem:</strong> Parameter I_API_SYS_ID is passed null</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Error Code:</strong> <code>REC_002</code></p>
+<p class="tableblock"><strong>Message:</strong> not present in import table or JSON data missing</p>
+<p class="tableblock"><strong>Problem:</strong> Invalid/Input data missing</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Error Code:</strong> <code>REC_003</code></p>
+<p class="tableblock"><strong>Message:</strong> Imported</p>
+<p class="tableblock"><strong>Problem:</strong> Invoice already imported to the system</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Error Code:</strong> <code>LOCN_0001</code></p>
+<p class="tableblock"><strong>Message:</strong> Location Code in JSON is null</p>
+<p class="tableblock"><strong>Problem:</strong> Location code in input data is null</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Error Code:</strong> <code>LOCN_0002</code></p>
+<p class="tableblock"><strong>Message:</strong> No location found in our system with code given in JSON</p>
+<p class="tableblock"><strong>Problem:</strong> No matching location was found in the system for the code provided in the input data.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Error Code:</strong> <code>CURR_0001</code></p>
+<p class="tableblock"><strong>Message:</strong> Currency Code in JSON is null</p>
+<p class="tableblock"><strong>Problem:</strong> Currency Code in input data is null</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Error Code:</strong> <code>CURR_0002</code></p>
+<p class="tableblock"><strong>Message:</strong> No Currency found in our system with code given in JSON</p>
+<p class="tableblock"><strong>Problem:</strong> Provided currency is not found in our system with given code</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Error Code:</strong> <code>INV_0004</code></p>
+<p class="tableblock"><strong>Message:</strong> Invoice Date value in JSON is null</p>
+<p class="tableblock"><strong>Problem:</strong> Invoice Date value in input data is null</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Error Code:</strong> <code>INV_0005</code></p>
+<p class="tableblock"><strong>Message:</strong> Format is not DD-MM-YYYY</p>
+<p class="tableblock"><strong>Problem:</strong> Format is not DD-MM-YYYY</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Error Code:</strong> <code>TXN_0001</code></p>
+<p class="tableblock"><strong>Message:</strong> Transaction details not found in JSON</p>
+<p class="tableblock"><strong>Problem:</strong> Transaction details not found in input data</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Error Code:</strong> <code>TXN_0002</code></p>
+<p class="tableblock"><strong>Message:</strong> Data not present in ADM_TXN master table</p>
+<p class="tableblock"><strong>Problem:</strong> Data not present in Transaction setup master</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Error Code:</strong> <code>TXN_0003</code></p>
+<p class="tableblock"><strong>Message:</strong> Transaction code not set for the company</p>
+<p class="tableblock"><strong>Problem:</strong> Transaction code not set for the company</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Error Code:</strong> <code>CUST_0001</code></p>
+<p class="tableblock"><strong>Message:</strong> Customer unique id in json is null</p>
+<p class="tableblock"><strong>Problem:</strong> Customer unique id in input data is null</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Error Code:</strong> <code>CUST_0002</code></p>
+<p class="tableblock"><strong>Message:</strong> Customer not mapped in FF and autogen flag also N</p>
+<p class="tableblock"><strong>Problem:</strong> Customer not mapped in the flexi field and autogen flag also N. So new customer can&#8217;t be created.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Error Code:</strong> <code>SM_0001</code></p>
+<p class="tableblock"><strong>Message:</strong> Salesman unique id in json is null</p>
+<p class="tableblock"><strong>Problem:</strong> Salesman unique id in input data is null</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Error Code:</strong> <code>SM_0002</code></p>
+<p class="tableblock"><strong>Message:</strong> Salesman not mapped in FF and autogen flag also N</p>
+<p class="tableblock"><strong>Problem:</strong> Salesman not mapped in the flexi field and autogen flag also N. So new salesman can&#8217;t be created.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Error Code:</strong> <code>ITM_0001</code></p>
+<p class="tableblock"><strong>Message:</strong> Item unique id is null in json</p>
+<p class="tableblock"><strong>Problem:</strong> Item unique id is null in input data</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Error Code:</strong> <code>ITM_0002</code></p>
+<p class="tableblock"><strong>Message:</strong> Item name is null in json</p>
+<p class="tableblock"><strong>Problem:</strong> Item name is null in input data</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Error Code:</strong> ITM_0003</p>
+<p class="tableblock"><strong>Message:</strong> SKU is null in json</p>
+<p class="tableblock"><strong>Problem:</strong> Barcode is null in input data</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Error Code:</strong> <code>ITM_0004</code></p>
+<p class="tableblock"><strong>Message:</strong> Price is null in json</p>
+<p class="tableblock"><strong>Problem:</strong> Price is null in input data</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Error Code:</strong> <code>ITM_0005</code></p>
+<p class="tableblock"><strong>Message:</strong> TaxesIncluded is null in json</p>
+<p class="tableblock"><strong>Problem:</strong> TaxesIncluded is null in input data</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Error Code:</strong> <code>HED_001</code></p>
+<p class="tableblock"><strong>Message:</strong> Header TaxesIncluded value in json is null or not in Y/N</p>
+<p class="tableblock"><strong>Problem:</strong> Header TaxesIncluded value in input data is null or not in Y/N</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Error Code:</strong> <code>ITM_0006</code></p>
+<p class="tableblock"><strong>Message:</strong> Mismatch in header and item tax</p>
+<p class="tableblock"><strong>Problem:</strong> Mismatch in header and item tax</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Error Code:</strong> <code>ITM_0007</code></p>
+<p class="tableblock"><strong>Message:</strong> Item mapping not found in FF and also not present in our system</p>
+<p class="tableblock"><strong>Problem:</strong> Item mapping is not found in flexi field and also not present in our system</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Error Code:</strong> <code>ITM_0008</code></p>
+<p class="tableblock"><strong>Message:</strong> Item mapped in FF but header sys id value not present in om_item table</p>
+<p class="tableblock"><strong>Problem:</strong> Item mapped in flexi field but header sys id value not present in om_item table</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Error Code:</strong> <code>TAX_0001</code></p>
+<p class="tableblock"><strong>Message:</strong> TAX unique id present but tax code is null in JSON</p>
+<p class="tableblock"><strong>Problem:</strong> TAX unique id present but tax code is null in input data</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Error Code:</strong> <code>TAX_0002</code></p>
+<p class="tableblock"><strong>Message:</strong> TAX mapping not found in FF and also not present in our system</p>
+<p class="tableblock"><strong>Problem:</strong> TAX mapping is not found in flexi field and also not present in our system</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Error Code:</strong> <code>PAY_0001</code></p>
+<p class="tableblock"><strong>Message:</strong> Payment uniqueid not found in JSON data</p>
+<p class="tableblock"><strong>Problem:</strong> Payment uniqueid not found in input data data</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Error Code:</strong> <code>PAY_0002</code></p>
+<p class="tableblock"><strong>Message:</strong> Payment Name not found in JSON data</p>
+<p class="tableblock"><strong>Problem:</strong> Payment Name not found in input data data</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Error Code:</strong> <code>PAY_0003</code></p>
+<p class="tableblock"><strong>Message:</strong> Payment amount not found or invalid in JSON data</p>
+<p class="tableblock"><strong>Problem:</strong> Payment amount not found or invalid in input data</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Error Code:</strong> <code>PAY_0004</code></p>
+<p class="tableblock"><strong>Message:</strong> Payment Name not linked in FF and with same payment name , multiple data found in our system</p>
+<p class="tableblock"><strong>Problem:</strong> Payment Name not linked in FF and with the same payment name, multiple data found in our system</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Error Code:</strong> <code>PAY_0005</code></p>
+<p class="tableblock"><strong>Message:</strong> Payment Name not linked in FF and payment name not found in our system</p>
+<p class="tableblock"><strong>Problem:</strong> Payment Name not linked in flexi field and payment name not found in our system</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Error Code:</strong> <code>SM_0003</code></p>
+<p class="tableblock"><strong>Message:</strong> More than 1 record found with same name in our system and not linked to FF</p>
+<p class="tableblock"><strong>Problem:</strong> More than 1 record found with same name in our system and not linked to flexi field</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Error Code:</strong> <code>CUST_0003</code></p>
+<p class="tableblock"><strong>Message:</strong> More than 1 record found with same name in our system and not linked to FF</p>
+<p class="tableblock"><strong>Problem:</strong> More than 1 record found with same name in our system and not linked to flexi field</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Error Code:</strong> <code>CUST_0004</code></p>
+<p class="tableblock"><strong>Message:</strong> Check in customer table with code</p>
+<p class="tableblock"><strong>Problem:</strong> Check in customer table with code</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Error Code:</strong> <code>REC_0004</code></p>
+<p class="tableblock"><strong>Message:</strong> More than 1 record found in header</p>
+<p class="tableblock"><strong>Problem:</strong> More than 1 record found in header</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Error Code:</strong> <code>ITM_0009</code></p>
+<p class="tableblock"><strong>Message:</strong> No item details given in JSON</p>
+<p class="tableblock"><strong>Problem:</strong> No item details given in input data</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Error Code:</strong> <code>ITM_0010</code></p>
+<p class="tableblock"><strong>Message:</strong> Not Enough Stock</p>
+<p class="tableblock"><strong>Problem:</strong> There are not enough stocks available</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Error Code:</strong> <code>REC_0011</code></p>
+<p class="tableblock"><strong>Message:</strong> in ADM_INTGRTED_API_IMPORT, unique id is duplicated</p>
+<p class="tableblock"><strong>Problem:</strong> The unique id is duplicated in the import section</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Error Code:</strong> <code>REC_0012</code></p>
+<p class="tableblock"><strong>Message:</strong> IN PARAMETER</p>
+<p class="tableblock"><strong>Problem:</strong> Missing Client ID in parameter(parameter cilent id is passed as null)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Error Code:</strong> <code>REC_0013</code></p>
+<p class="tableblock"><strong>Message:</strong> IN PARAMETER</p>
+<p class="tableblock"><strong>Problem:</strong> Missing Location code in parameter(parameter location code is passed as null)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Error Code:</strong> <code>REC_0014</code></p>
+<p class="tableblock"><strong>Message:</strong> in API setting table</p>
+<p class="tableblock"><strong>Problem:</strong> Missing Division Code (based on client id and location code will check division code from API setting table. If it&#8217;s null, then this error is thrown)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Error Code:</strong> <code>REC_0015</code></p>
+<p class="tableblock"><strong>Message:</strong> not present in our system</p>
+<p class="tableblock"><strong>Problem:</strong> Invalid Division Code (based on client id and location code will check division code from API setting table. If it&#8217;s present and not present in division master, then this error is thrown)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Error Code:</strong> <code>CUST_0005</code></p>
+<p class="tableblock"><strong>Message:</strong> Set up - prefix CUSTSFX not found</p>
+<p class="tableblock"><strong>Problem:</strong> Set up - prefix CUSTSFX not found</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Error Code:</strong> <code>CUST_0006</code></p>
+<p class="tableblock"><strong>Message:</strong> Cust area name is there in JSON but city or country details are missing</p>
+<p class="tableblock"><strong>Problem:</strong> Customer area name is there in input data, but city or country details are missing</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Error Code:</strong> <code>CUST_0007</code></p>
+<p class="tableblock"><strong>Message:</strong> Cust City name is there in JSON but country detail is missing</p>
+<p class="tableblock"><strong>Problem:</strong> Customer City name is there in input data, but country detail is missing</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Error Code:</strong> <code>CUST_0008</code></p>
+<p class="tableblock"><strong>Message:</strong> Country Name not exists</p>
+<p class="tableblock"><strong>Problem:</strong> Provided Country Name does not exist</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Error Code:</strong> <code>CUST_0009</code></p>
+<p class="tableblock"><strong>Message:</strong> City Name not exists</p>
+<p class="tableblock"><strong>Problem:</strong> Provided City Name does not exist</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Error Code:</strong> <code>CUST_0010</code></p>
+<p class="tableblock"><strong>Message:</strong> Area Name not exists</p>
+<p class="tableblock"><strong>Problem:</strong> Provided Area Name does not exist</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Error Code:</strong> <code>TAX_0005</code></p>
+<p class="tableblock"><strong>Message:</strong> TAX_BASED field from OM_TAX table is missing</p>
+<p class="tableblock"><strong>Problem:</strong> Group tax or Item tax is missing in Tax master</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Error Code:</strong> <code>TAX_0006</code></p>
+<p class="tableblock"><strong>Message:</strong> item not found in table OS_TAX_ITM_SETUP</p>
+<p class="tableblock"><strong>Problem:</strong> Item not found in table item setup in tax master</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Error Code:</strong> <code>TAX_0007</code></p>
+<p class="tableblock"><strong>Message:</strong> item grp not found in table OS_TAX_ITM_GRP_SETUP</p>
+<p class="tableblock"><strong>Problem:</strong> Item group not found in table group setup in tax master</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Error Code:</strong> <code>CUST_0011</code></p>
+<p class="tableblock"><strong>Message:</strong> Cust delivery area name is there in JSON but city or country details are missing</p>
+<p class="tableblock"><strong>Problem:</strong> Customer delivery area name is there in input data but city or country details are missing</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Error Code:</strong> <code>CUST_0012</code></p>
+<p class="tableblock"><strong>Message:</strong> Cust delivery City name is there in JSON but country detail is missing</p>
+<p class="tableblock"><strong>Problem:</strong> Customer delivery City name is there in input data, but country detail is missing</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Error Code:</strong> <code>CUST_0013</code></p>
+<p class="tableblock"><strong>Message:</strong> Country Name not exists</p>
+<p class="tableblock"><strong>Problem:</strong> Provided Country Name does not exist</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Error Code:</strong> <code>CUST_0014</code></p>
+<p class="tableblock"><strong>Message:</strong> City Name not exists</p>
+<p class="tableblock"><strong>Problem:</strong> Provided City Name does not exist</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Error Code:</strong> <code>CUST_0015</code></p>
+<p class="tableblock"><strong>Message:</strong> Area Name not exists</p>
+<p class="tableblock"><strong>Problem:</strong> Provided Area Name does not exist</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Error Code:</strong> <code>INV0000</code></p>
+<p class="tableblock"><strong>Message:</strong> General Exception</p>
+<p class="tableblock"><strong>Problem:</strong> General Exception with error details</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Error Code:</strong> <code>INV0001</code></p>
+<p class="tableblock"><strong>Message:</strong> Unique Id is required</p>
+<p class="tableblock"><strong>Problem:</strong> Unique Id is required</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Error Code:</strong> <code>INV0002</code></p>
+<p class="tableblock"><strong>Message:</strong> Transaction Type is required</p>
+<p class="tableblock"><strong>Problem:</strong> Transaction Type is required</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Error Code:</strong> <code>INV0003</code></p>
+<p class="tableblock"><strong>Message:</strong> Invalid Transaction Type</p>
+<p class="tableblock"><strong>Problem:</strong> Invalid Transaction Type</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Error Code:</strong> <code>INV0004</code></p>
+<p class="tableblock"><strong>Message:</strong> Transaction Code is required</p>
+<p class="tableblock"><strong>Problem:</strong> Transaction Code is required</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Error Code:</strong> <code>INV0005</code></p>
+<p class="tableblock"><strong>Message:</strong> Invalid Tax Included</p>
+<p class="tableblock"><strong>Problem:</strong> Invalid Tax Included</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Error Code:</strong> <code>INV0006</code></p>
+<p class="tableblock"><strong>Message:</strong> Location Code is required</p>
+<p class="tableblock"><strong>Problem:</strong> Location Code is required</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+  </article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <div class="footerdiv">
+    <p>© 2023 Checkout Computer Systems Trading LLC.
+    </p>
+    <!-- <div class="community-section">
+      <p class="community-section__text">Follow Lisk on: </p>
+      <div class="community-section__icons"> -->
+    <div class="community_icons">
+      <a href="https://www.youtube.com/@be-nymbl" title="YouTube" target="_blank" class="footer_icon icon-youtube"></a>
+      <a href="https://twitter.com/checkoutpoint/" title="Twitter" target="_blank" class="footer_icon icon-twitter"></a>
+      <a href="https://www.instagram.com/checkout_pointfzco/" title="Instagram" target="_blank" class="footer_icon icon-instagram"></a>
+      <a href="https://www.facebook.com/benymbl.co" title="Facebook" target="_blank" class="footer_icon icon-facebook"></a>
+      <a href="https://www.linkedin.com/company/be-nymbl/" title="Linkedin" target="_blank" class="footer_icon icon-linkedin"></a>
+
+      <!--    </div> -->
+    </div>
+  </div>
+</footer>
+<script id="site-script" src="../../_/js/site.js" data-ui-root-path="../../_"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script async src="../../_/js/vendor/highlight.js"></script>
+<script async src="../../_/js/vendor/glossary.js"></script>
+<script async src="../../_/js/vendor/tabs.js"></script>
+<script async src="../../_/js/vendor/swagger-ui.js"></script>
+<script async src="../../_/js/vendor/component-versions.js"></script>
+<script src="../../_/js/vendor/custom.js"></script>
+
+
+
+  </body>
+</html>
